@@ -3,15 +3,14 @@
   <channel>
     <title>SuperCmd</title>
     <item>
-      <title>SuperCmd 1.0.1</title>
+      <title>SuperCmd 1.0.0</title>
       <pubDate>Wed, 22 Jul 2026 14:02:34 +0000</pubDate>
       <sparkle:version>2</sparkle:version>
-      <sparkle:shortVersionString>1.0.1</sparkle:shortVersionString>
+      <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
       <description><![CDATA[
         <ul>
-          <li>test 1</li>
-          <li>test 2</li>
+          <li>SuperCmd Release</li>
         </ul>
       ]]></description>
       <enclosure url="https://github.com/SuperCmdLabs/SuperCmd-v2-releases/releases/download/1.0.1/SuperCmd.dmg" type="application/octet-stream" sparkle:edSignature="GtJaGrauvztpm7vJezcuuN3S7KZIXGfIWAfvR7PCDNhbDKPaT00QWr2QQNY9adYCU9g8IkpS1ESQbFFDAe02BQ==" length="18062952" />
