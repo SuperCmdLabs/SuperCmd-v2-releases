@@ -4,7 +4,7 @@
     <title>SuperCmd</title>
     <item>
       <title>SuperCmd 1.0.1</title>
-      <pubDate>Wed, 29 Jul 2026 04:26:45 +0000</pubDate>
+      <pubDate>Wed, 29 Jul 2026 05:12:07 +0000</pubDate>
       <sparkle:version>2</sparkle:version>
       <sparkle:shortVersionString>1.0.1</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
@@ -58,7 +58,7 @@
           <li>Onboarding no longer warms the file index while you're still setting up.</li>
         </ul>
       ]]></description>
-      <enclosure url="https://github.com/SuperCmdLabs/SuperCmd-v2-releases/releases/download/1.0.1/SuperCmd.dmg" type="application/octet-stream" sparkle:edSignature="Nj/zYuF1UDfROpC43umLz6JHyYVSVVhC17YfVQ3ie2fxZJhH3HTUkUl0f/+Lp06qvNCHIIbkMYZAPs3rSNhaAw==" length="18096982" />
+      <enclosure url="https://github.com/SuperCmdLabs/SuperCmd-v2-releases/releases/download/1.0.1/SuperCmd.dmg" type="application/octet-stream" sparkle:edSignature="sRx9zFvkaiLW5Hk8IcA9P1M8qPs4GXqkQ6Uq1zvJnaTUJkHJk7K6uIMfQAp+aubXs9uw08USBjRpT0G/z1zfCg==" length="18097089" />
     </item>
   </channel>
 </rss>
