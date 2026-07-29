@@ -9,9 +9,53 @@
       <sparkle:shortVersionString>1.0.1</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
       <description><![CDATA[
+        <h3>Launcher</h3>
         <ul>
-          <li>test 1</li>
-          <li>test 2</li>
+          <li><b>Search results hold still as you type.</b> Commands you use constantly stayed on top for the first letter, then dropped below apps you'd never opened as you typed more of the name. Ranking was rebuilt so a result only moves when the <i>kind</i> of match actually changes, and your most-used commands keep the top of their group the whole way through a query.</li>
+          <li><b>Escape goes back, not away.</b> Opening a command by its own shortcut and pressing Escape used to dismiss SuperCmd entirely, while reaching the same screen by typing its name went back to the launcher. Escape now always steps back one level; press it again from the launcher to close.</li>
+          <li>&#8984;-number hints only appear after a deliberate hold, so they stop flickering during normal use.</li>
+        </ul>
+
+        <h3>Notes</h3>
+        <ul>
+          <li>Code blocks render as a single rounded slab across the full width, and the fence markers disappear once you leave the line. Inline code no longer leaves a stray block on the line above.</li>
+          <li>Typing <code>[]</code> creates a real checkbox you can click to tick, with a visible checkmark.</li>
+          <li>&#8984;W closes notes.</li>
+        </ul>
+
+        <h3>Extensions</h3>
+        <ul>
+          <li><b>SVG icons render.</b> Extensions built around vector artwork showed blank tiles.</li>
+          <li><b>Action menus are complete.</b> Keyboard shortcuts declared per-platform were being dropped, so some &#8984;K menus showed none at all. Menus now also group into sections and show real artwork, and built-in icon coverage went from 39% to 86%.</li>
+          <li><b>Extensions that hung on launch now work.</b> Commands pulling in a missing package sat at 100% CPU until they timed out.</li>
+          <li><b>Big list commands stay responsive.</b> One popular extension climbed to roughly 490&nbsp;MB and froze the panel for four seconds; that workload now costs no measurable time or memory.</li>
+          <li>Commands whose arguments are all optional open on a single Enter instead of two.</li>
+          <li>Menu bar extras open their menu on left-click, show item icons, honour tint colours, and refresh live.</li>
+          <li>Toast notifications posted by extensions have working actions.</li>
+          <li>Searching and scrolling long extension lists is markedly faster.</li>
+        </ul>
+
+        <h3>Window switcher</h3>
+        <ul>
+          <li>Previews are captured together rather than trickling in one at a time, and each cell holds its full size before its preview arrives, so the grid no longer resizes under the pointer.</li>
+        </ul>
+
+        <h3>Settings</h3>
+        <ul>
+          <li>AI providers are a dropdown with icons instead of every provider expanded at once.</li>
+          <li>Switching tabs no longer leaves the previous pane on screen.</li>
+        </ul>
+
+        <h3>Dictation</h3>
+        <ul>
+          <li>Speech Analyzer can no longer be selected while Apple Intelligence is off. The card explains why and offers a button straight to the right System Settings pane.</li>
+        </ul>
+
+        <h3>Fixes</h3>
+        <ul>
+          <li>Quick Prompt puts the caret in the input as soon as it opens.</li>
+          <li>Updates open in a real window.</li>
+          <li>Onboarding no longer warms the file index while you're still setting up.</li>
         </ul>
       ]]></description>
       <enclosure url="https://github.com/SuperCmdLabs/SuperCmd-v2-releases/releases/download/1.0.1/SuperCmd.dmg" type="application/octet-stream" sparkle:edSignature="GtJaGrauvztpm7vJezcuuN3S7KZIXGfIWAfvR7PCDNhbDKPaT00QWr2QQNY9adYCU9g8IkpS1ESQbFFDAe02BQ==" length="18062952" />
