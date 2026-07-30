@@ -3,6 +3,37 @@
   <channel>
     <title>SuperCmd</title>
     <item>
+      <title>SuperCmd 1.0.2</title>
+      <pubDate>Thu, 30 Jul 2026 03:40:20 +0000</pubDate>
+      <sparkle:version>3</sparkle:version>
+      <sparkle:shortVersionString>1.0.2</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h3>New Features</h3>
+        <ul>
+          <li>Added Search Menu Items to the launcher.</li>
+          <li>Added snippet import and export, including support for Raycast snippet files.</li>
+        </ul>
+
+        <h3>Improvements</h3>
+        <ul>
+          <li>Snippet actions can now be opened with &#8984;K even when the library is empty.</li>
+          <li>Improved the Snippets list header styling.</li>
+          <li>Improved image search in Clipboard History.</li>
+          <li>Added stronger safeguards against uninstalling protected system apps.</li>
+        </ul>
+
+        <h3>Bug Fixes</h3>
+        <ul>
+          <li>Fixed Safari not appearing in launcher search results on recent macOS versions.</li>
+          <li>Fixed snippet import and export dialogs appearing behind the launcher.</li>
+          <li>Fixed crashes triggered by snippet keyword expansion.</li>
+          <li>Fixed Browser History search not respecting its Settings toggle.</li>
+        </ul>
+      ]]></description>
+      <enclosure url="https://github.com/SuperCmdLabs/SuperCmd-v2-releases/releases/download/1.0.2/SuperCmd.dmg" type="application/octet-stream" sparkle:edSignature="fpMFCJVuour82QdyXjSoyO90HhDH0Aty4Rnwft9ax7S6GLvTP753yK0nYpRTAR38OWfzbHBTuiZxkmW8IdgxCg==" length="18157837" />
+    </item>
+    <item>
       <title>SuperCmd 1.0.1</title>
       <pubDate>Wed, 29 Jul 2026 05:12:07 +0000</pubDate>
       <sparkle:version>2</sparkle:version>
