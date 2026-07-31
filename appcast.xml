@@ -3,6 +3,54 @@
   <channel>
     <title>SuperCmd</title>
     <item>
+      <title>SuperCmd 1.0.3</title>
+      <pubDate>Fri, 31 Jul 2026 04:00:23 +0000</pubDate>
+      <sparkle:version>4</sparkle:version>
+      <sparkle:shortVersionString>1.0.3</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h3>New Features</h3>
+        <ul>
+          <li>Added complete interface localization for English, German, Spanish, French, Italian, Japanese, Korean, Russian, Simplified Chinese, and Traditional Chinese.</li>
+          <li>Added a language selector with Follow System support.</li>
+          <li>Added localized app-name search, allowing apps such as 百度网盘 to be found using their translated names.</li>
+          <li>Added configurable Emacs and Vim-style keyboard navigation.</li>
+          <li>Added global keyboard shortcuts for saved Quicklinks.</li>
+          <li>Added shortcut conflict detection across commands, apps, dictation, read aloud, terminal, agents, and other global shortcuts.</li>
+          <li>Added configurable Cloud Sync intervals of 1, 5, 15, or 30 minutes.</li>
+        </ul>
+
+        <h3>Launcher and UI Improvements</h3>
+        <ul>
+          <li>Localized launcher commands, subtitles, actions, settings, widgets, and formatted interface labels while preserving English launcher terms as searchable aliases.</li>
+          <li>Refined the compact launcher layout, footer command pills, shortcut keycaps, panel highlights, and keyboard navigation.</li>
+          <li>Escape now clears the current search before navigating back.</li>
+          <li>Improved keyboard scrolling in action menus so the highlighted action remains visible.</li>
+          <li>Hid Quick AI when no compatible AI provider is enabled.</li>
+          <li>Added official ElevenLabs and Qwen branding and a parrot icon for Parakeet.</li>
+          <li>Unified the AI Chat sidebar, conversation, and composer styling.</li>
+          <li>Set the default Background Tint to 75%.</li>
+          <li>Reduced Quick Prompt's window and shadow corner radius.</li>
+        </ul>
+
+        <h3>Bug Fixes</h3>
+        <ul>
+          <li>Fixed Compact mode leaking launcher results below the search bar or shifting content when expanded.</li>
+          <li>Fixed Show in Menu Bar applying one toggle behind.</li>
+          <li>Fixed Command-Return not saving Quicklinks while the editor had focus.</li>
+          <li>Fixed the Browser History master switch becoming inaccessible when disabled.</li>
+          <li>Fixed Cloud Sync running every second instead of respecting the configured interval.</li>
+          <li>Fixed argument-based Quicklinks not focusing their argument field and deleted Quicklinks retaining stale shortcuts.</li>
+          <li>Fixed internal macOS helper apps appearing in launcher results while preserving Safari and other user-facing apps.</li>
+          <li>Fixed crashes when attaching files in AI Chat.</li>
+          <li>Fixed Restore Purchase not opening the Polar customer portal.</li>
+          <li>Fixed clipboard image search, first-result selection, and stale row styling or duplicate shortcut badges after pinning and unpinning.</li>
+          <li>Fixed global snippet expansion failing to recover after macOS disabled its event tap.</li>
+        </ul>
+      ]]></description>
+      <enclosure url="https://github.com/SuperCmdLabs/SuperCmd-v2-releases/releases/download/1.0.3/SuperCmd.dmg" type="application/octet-stream" sparkle:edSignature="mHF+ZBQUys6QZ94ZmiWIVwStYDkVnNt7ukwOKY0iBbtXlnyFUTxZffL4Z+vKX2NutKSjrHmJXUEn6kYYPuV4CA==" length="18590517" />
+    </item>
+    <item>
       <title>SuperCmd 1.0.2</title>
       <pubDate>Thu, 30 Jul 2026 03:40:20 +0000</pubDate>
       <sparkle:version>3</sparkle:version>
