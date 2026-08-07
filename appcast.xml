@@ -78,7 +78,7 @@
         <h3>Improvements</h3>
         <h4>Performance</h4>
         <ul>
-          <li>Reduced memory use with roughly 126,000 files indexed from about 641 MB to about 93 MB.</li>
+          <li>Reduced memory use in file indexing.</li>
           <li>Reduced dictation pill CPU use to about 1% while recording and effectively zero once dismissed.</li>
           <li>The file index now persists between launches and excludes <code>node_modules</code>, DerivedData, caches, and temporary folders by default.</li>
           <li>Improved file search speed through smaller per-entry search data and fewer path allocations.</li>
