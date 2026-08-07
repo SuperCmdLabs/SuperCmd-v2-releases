@@ -4,8 +4,7 @@
     <title>SuperCmd</title>
     <item>
       <title>SuperCmd 1.0.4</title>
-      <!-- TODO: set to the real publish time, RFC 822, when the release goes out. -->
-      <pubDate>REPLACE_WITH_PUBDATE</pubDate>
+      <pubDate>Fri, 07 Aug 2026 05:08:33 +0000</pubDate>
       <sparkle:version>5</sparkle:version>
       <sparkle:shortVersionString>1.0.4</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
@@ -186,10 +185,7 @@
           <li>Fixed crash reports containing no diagnostic information.</li>
         </ul>
 ]]></description>
-      <!-- TODO: sparkle:edSignature and length come from Sparkle's sign_update
-           run against the notarized DMG. Sparkle REJECTS an enclosure whose
-           signature is missing or wrong, so this entry must not merge as-is. -->
-      <enclosure url="https://github.com/SuperCmdLabs/SuperCmd-v2-releases/releases/download/1.0.4/SuperCmd.dmg" type="application/octet-stream" sparkle:edSignature="REPLACE_WITH_ED_SIGNATURE" length="REPLACE_WITH_BYTE_LENGTH" />
+      <enclosure url="https://github.com/SuperCmdLabs/SuperCmd-v2-releases/releases/download/1.0.4/SuperCmd.dmg" type="application/octet-stream" sparkle:edSignature="ZBFDl9VUkjiV4TTeq4PGWAhf1mcosbeO4VnI/ncWcytDWAR2JPZ64mje9HNNk7wCsS0qyjZvPrYGunKTiRP6AQ==" length="20326243" />
     </item>
     <item>
       <title>SuperCmd 1.0.3</title>
