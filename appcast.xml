@@ -185,7 +185,7 @@
           <li>Fixed crash reports containing no diagnostic information.</li>
         </ul>
 ]]></description>
-      <enclosure url="https://github.com/SuperCmdLabs/SuperCmd-v2-releases/releases/download/1.0.4/SuperCmd.dmg" type="application/octet-stream" sparkle:edSignature="ZBFDl9VUkjiV4TTeq4PGWAhf1mcosbeO4VnI/ncWcytDWAR2JPZ64mje9HNNk7wCsS0qyjZvPrYGunKTiRP6AQ==" length="20326243" />
+      <enclosure url="https://github.com/SuperCmdLabs/SuperCmd-v2-releases/releases/download/1.0.4/SuperCmd.dmg" type="application/octet-stream" sparkle:edSignature="ZSCjPml2yFhT5O3sGQNMY7S07JbR5BnCOv8dJMDdOWOb7+FFiWcPQIsQLa/P56FXiUNepQmIxe+NQtaYs5VWDQ==" length="20331701" />
     </item>
     <item>
       <title>SuperCmd 1.0.3</title>
