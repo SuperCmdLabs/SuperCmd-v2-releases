@@ -3,6 +3,195 @@
   <channel>
     <title>SuperCmd</title>
     <item>
+      <title>SuperCmd 1.0.4</title>
+      <!-- TODO: set to the real publish time, RFC 822, when the release goes out. -->
+      <pubDate>REPLACE_WITH_PUBDATE</pubDate>
+      <sparkle:version>5</sparkle:version>
+      <sparkle:shortVersionString>1.0.4</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h3>New Features</h3>
+        <h4>Translation</h4>
+        <ul>
+          <li>Rebuilt the translator as a full-size two-pane editor that handles multi-paragraph text, with language swapping, ⌘↩ to copy, and its own actions menu.</li>
+          <li>Added Translate Selection, which translates text selected in any application, by shortcut or from the launcher.</li>
+          <li>Added Apple on-device translation as an alternative to MyMemory, with language pair download and management.</li>
+          <li>Added a Translation settings pane covering provider selection, language pairs, and privacy and quota guidance.</li>
+        </ul>
+        <h4>AI</h4>
+        <ul>
+          <li>Added a custom AI provider supporting OpenAI-compatible and Anthropic-compatible endpoints, for use with local servers such as oMLX.</li>
+          <li>Added Markdown rendering, hover-to-copy for code blocks and responses, and persistent conversation history to Quick AI.</li>
+          <li>Added custom Quick Prompt presets with editable names, instructions, and emoji icons, and the ability to hide built-in presets.</li>
+          <li>Added global hotkeys for Quick Prompt presets, and an optional Quick AI mode that runs a preset on selected text without opening the prompt.</li>
+          <li>Added separate AI provider selection for Quick AI, AI Chat, and Quick AI prompts.</li>
+          <li>Added per-model reasoning effort for ChatGPT models that support it.</li>
+          <li>Added a Preserve line breaks setting for Quick Fix and Quick Prompt, enabled by default.</li>
+          <li>Added Quick AI shortcuts for New Chat, Open in AI Chat, Previous Chat, and Next Chat.</li>
+          <li>Added alias and global hotkey support for AI Chat in Settings → Commands.</li>
+        </ul>
+        <h4>Read Aloud</h4>
+        <ul>
+          <li>Added the complete Edge voice catalog, with 322 voices across 142 locales, replacing the small bundled English list.</li>
+          <li>Added separate language and voice selection in Read Aloud settings and the floating read pill.</li>
+        </ul>
+        <h4>File Search</h4>
+        <ul>
+          <li>Removed the file index entry limit, so all eligible files and folders are searchable.</li>
+          <li>Added type filters for Folder, Document, Image, Video, Audio, Archive, and Text.</li>
+          <li>Added a preview and metadata pane to Search Files, and parent folder paths to file results.</li>
+          <li>Added file index statistics to Settings, including entry counts, disk usage, and last indexing duration.</li>
+          <li>Added gitignore-style exclusion patterns for the file index.</li>
+        </ul>
+        <h4>Apple Shortcuts</h4>
+        <ul>
+          <li>Added Apple Shortcuts to the launcher, with search, per-shortcut enablement, aliases, and global hotkeys.</li>
+        </ul>
+        <h4>Launcher</h4>
+        <ul>
+          <li>Added configurable web search engines, including Google, Bing, DuckDuckGo, Brave, Startpage, Ecosia, Yahoo, Baidu, Yandex, Naver, Sogou, Qwant, Kagi, and a custom URL option.</li>
+          <li>Added an in-app changelog, available in About and as a launcher command.</li>
+          <li>Added a Reset Launcher Position command, and the launcher now remembers its position across restarts.</li>
+          <li>Added a setting to hide Quick AI from the launcher without disabling AI commands.</li>
+          <li>Added a Fill window action that expands the frontmost window to fill the screen.</li>
+          <li>Added X and Instagram links to the app menu.</li>
+        </ul>
+        <h4>Script Commands</h4>
+        <ul>
+          <li>Added global hotkeys for custom Script Commands.</li>
+          <li>Added support for Raycast Script Command arguments, refresh intervals, working directories, confirmation, output modes, and ANSI colour.</li>
+          <li>Added import of Script Command directories from Raycast backups.</li>
+        </ul>
+        <h4>Dictation</h4>
+        <ul>
+          <li>Added custom dictation vocabulary as a term list, passed to the speech engine to improve recognition of names and uncommon words.</li>
+        </ul>
+        <h4>Backups and Trial</h4>
+        <ul>
+          <li>Added <code>.supercmdbackup</code> export and selective import for quicklinks, snippets, notes, clipboard, screenshots, and AI chats.</li>
+          <li>Added data export for expired trials, available without unlocking the rest of the app.</li>
+          <li>Added trial reminders two days and one day before expiry.</li>
+        </ul>
+        <h4>Crash Reporting</h4>
+        <ul>
+          <li>Added crash reporting. After an unexpected exit, the next launch offers a report to review, share as a GitHub issue, or discard. Nothing is sent automatically.</li>
+        </ul>
+        <h3>Improvements</h3>
+        <h4>Performance</h4>
+        <ul>
+          <li>Reduced memory use with roughly 126,000 files indexed from about 641 MB to about 93 MB.</li>
+          <li>Reduced dictation pill CPU use to about 1% while recording and effectively zero once dismissed.</li>
+          <li>The file index now persists between launches and excludes <code>node_modules</code>, DerivedData, caches, and temporary folders by default.</li>
+          <li>Improved file search speed through smaller per-entry search data and fewer path allocations.</li>
+        </ul>
+        <h4>Launcher</h4>
+        <ul>
+          <li>Improved launcher fuzzy search</li>
+          <li>Down Arrow now expands the launcher in Compact mode.</li>
+          <li>Backspace on an empty search field now navigates back, matching Escape.</li>
+          <li>Logical shortcuts now follow the active keyboard layout, so Dvorak, Colemak, and custom layouts work correctly.</li>
+        </ul>
+        <h4>Extensions</h4>
+        <ul>
+          <li>Extension results now show the command name with the extension name beneath it, instead of combining both into the title.</li>
+          <li>Extension file, folder, and application preferences now use native macOS pickers instead of text fields.</li>
+          <li>Reopening SuperCmd within the Pop to Root window now returns to the extension screen you left, with search and selection intact.</li>
+        </ul>
+        <h4>Dictation</h4>
+        <ul>
+          <li>Dictation now shows warm-up progress instead of a listening waveform, and the Stop button appears only while recording.</li>
+          <li>Microphone and Speech Recognition permission prompts are now brought to the front.</li>
+          <li>Local dictation models now stay loaded for the session instead of reloading on each use.</li>
+        </ul>
+        <h4>Snippets</h4>
+        <ul>
+          <li>Snippets now expand as soon as the final keyword character is typed, without requiring a trailing space or Return.</li>
+        </ul>
+        <h4>Calculator</h4>
+        <ul>
+          <li>Added percentage, ratio, date and time, workday, PPI, unit, and function support.</li>
+        </ul>
+        <h4>Interface</h4>
+        <ul>
+          <li>Clipboard images now fit the preview area instead of requiring scrolling.</li>
+          <li>Detail panes for clipboard, snippets, notes, quicklinks, and files now scroll clear of the footer.</li>
+          <li>Return in a tag field now accepts the highlighted suggestion, and Backspace removes the last tag.</li>
+          <li>Settings now appears in Cmd-Tab while open.</li>
+          <li>Apple language model controls are now shown only when Apple On-Device is selected.</li>
+          <li>Replaced the filled back button with a transparent chevron with higher hover contrast.</li>
+          <li>Removed timezone abbreviations from Time widgets.</li>
+          <li>Reduced the brightness of the panel&#x27;s top outline.</li>
+        </ul>
+        <h4>Installer</h4>
+        <ul>
+          <li>Removed the stray <code>.background</code> and <code>.fseventsd</code> folders from the disk image window.</li>
+        </ul>
+        <h4>Languages</h4>
+        <ul>
+          <li>Reviewed and corrected German, Spanish, French, Italian, Japanese, Simplified Chinese, and Traditional Chinese translations, with consistent terminology across trials, onboarding, providers, and product names.</li>
+        </ul>
+        <h3>Bug Fixes</h3>
+        <h4>Widgets</h4>
+        <ul>
+          <li>Fixed launcher widgets leaving unused space in a row instead of filling the available width.</li>
+          <li>Fixed clocks and metrics stopping after the launcher was closed and reopened.</li>
+          <li>Fixed per-app CPU reporting 0% and memory not matching Activity Monitor.</li>
+          <li>Fixed compact clock values wrapping onto a second line.</li>
+        </ul>
+        <h4>Dictation and Snippets</h4>
+        <ul>
+          <li>Fixed dictated text being written to the clipboard, where clipboard history could capture it.</li>
+          <li>Fixed snippet keywords containing shifted punctuation, such as <code>@@</code> and <code>!!</code>, never expanding.</li>
+        </ul>
+        <h4>AI</h4>
+        <ul>
+          <li>Fixed local OpenAI-compatible providers reporting an invalid API key because the edited base URL was not saved before testing.</li>
+          <li>Fixed versioned provider URLs producing <code>/v1/v1/</code> request paths.</li>
+          <li>Fixed custom provider models such as Qwen being discarded because they were not on OpenAI&#x27;s model list.</li>
+          <li>Fixed Quick AI collapsing multi-line selected text when asked only to change grammar or wording.</li>
+        </ul>
+        <h4>Calculator</h4>
+        <ul>
+          <li>Fixed currency conversion showing fabricated results, where <code>1 BTC in USD</code> could display <code>$1.00</code>.</li>
+          <li>Fixed launcher results being replaced by currency rate refreshes after the query had changed.</li>
+        </ul>
+        <h4>Extensions</h4>
+        <ul>
+          <li>Fixed selecting a file in an extension closing the launcher and terminating the extension.</li>
+          <li>Fixed the 1Password My Vaults command closing the launcher during Touch ID authentication.</li>
+          <li>Fixed shortcuts declared by extensions, such as KeePassXC&#x27;s copy actions, never reaching the extension.</li>
+          <li>Fixed Script Commands being blocked from using Bluetooth devices.</li>
+        </ul>
+        <h4>Notes</h4>
+        <ul>
+          <li>Fixed numbered lists not renumbering when content was inserted before an existing item.</li>
+          <li>Fixed Return at the start of a list item producing a duplicate marker.</li>
+        </ul>
+        <h4>Translation and Calendar</h4>
+        <ul>
+          <li>Fixed Translate Selection clearing the captured text as soon as the translator opened.</li>
+          <li>Fixed the calendar permission prompt for My Schedule never appearing.</li>
+          <li>Fixed My Schedule not showing later events when the first two weeks were empty.</li>
+        </ul>
+        <h4>Files and Screenshots</h4>
+        <ul>
+          <li>Fixed Return opening a web search fallback instead of a file result that arrived a moment later.</li>
+          <li>Fixed the selected screenshot in history being difficult to see, and added right-click to open its actions menu.</li>
+          <li>Fixed pinned screenshots losing their aspect ratio when resized and showing transparent edges.</li>
+        </ul>
+        <h4>Settings and Crashes</h4>
+        <ul>
+          <li>Fixed the Quicklink editor in Settings having no visible save action.</li>
+          <li>Fixed normal quits, command-line termination, and running two copies of SuperCmd being reported as crashes.</li>
+          <li>Fixed crash reports containing no diagnostic information.</li>
+        </ul>
+]]></description>
+      <!-- TODO: sparkle:edSignature and length come from Sparkle's sign_update
+           run against the notarized DMG. Sparkle REJECTS an enclosure whose
+           signature is missing or wrong, so this entry must not merge as-is. -->
+      <enclosure url="https://github.com/SuperCmdLabs/SuperCmd-v2-releases/releases/download/1.0.4/SuperCmd.dmg" type="application/octet-stream" sparkle:edSignature="REPLACE_WITH_ED_SIGNATURE" length="REPLACE_WITH_BYTE_LENGTH" />
+    </item>
+    <item>
       <title>SuperCmd 1.0.3</title>
       <pubDate>Fri, 31 Jul 2026 04:00:23 +0000</pubDate>
       <sparkle:version>4</sparkle:version>
