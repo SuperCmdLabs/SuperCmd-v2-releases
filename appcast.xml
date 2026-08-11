@@ -3,6 +3,83 @@
   <channel>
     <title>SuperCmd</title>
     <item>
+      <title>SuperCmd 1.0.5</title>
+      <pubDate>Tue, 11 Aug 2026 14:00:00 +0000</pubDate>
+      <sparkle:version>6</sparkle:version>
+      <sparkle:shortVersionString>1.0.5</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h3>New Features</h3>
+        <h4>Interface</h4>
+        <ul>
+          <li>Redesigned the built-in command icons with a colorful glass icon set — Clipboard History, Snippets, Notes, Quicklinks, Search Files, Translate, Camera, AI Chat, Quick Prompt, Quick Fix, Agents, and the extension Store. Create Snippet, Create Note, and Create Quicklink now share their parent command's icon.</li>
+          <li>Search Emoji &amp; Symbols now uses a smiley emoji as its icon.</li>
+        </ul>
+        <h4>Dictation</h4>
+        <ul>
+          <li>Added a model release delay setting for local dictation models, with idle windows from 1 minute to 2 hours plus Never. The default is 2 hours, so back-to-back sessions never pay a model reload while a long-idle app still returns its memory.</li>
+        </ul>
+        <h3>Improvements</h3>
+        <h4>Launcher</h4>
+        <ul>
+          <li>The launcher now opens on the screen you are working on instead of always appearing on the display it was last used on.</li>
+          <li>The panel now stays pinned to its top edge while its content grows and shrinks, instead of jumping around the screen.</li>
+          <li>The launcher no longer flashes a loading indicator while you type — results simply appear when ready.</li>
+          <li>Added ⌘P to pin or unpin the selected command, and ⌘⇧↑ / ⌘⇧↓ to move a pin up or down without opening the actions menu. The menu shows the new shortcuts.</li>
+        </ul>
+        <h4>Dictation</h4>
+        <ul>
+          <li>Hold-to-talk no longer freezes the app while a Bluetooth microphone, such as AirPods, is slow to connect, and a recording that never starts now recovers cleanly instead of wedging the session.</li>
+          <li>Fixed long Whisper transcriptions being discarded by a timeout instead of typed out.</li>
+          <li>After you release the hold key, the pill now shows transcription progress instead of a frozen waveform.</li>
+          <li>Dictation models now load on first use instead of at every launch, unless the release delay is set to Never.</li>
+          <li>Cloud dictation now encodes audio in the background, keeping the interface responsive during long recordings.</li>
+          <li>Reduced the dictation pill's rendering work while recording.</li>
+          <li>Removed the nonfunctional Qwen3-ASR engine option from Dictation settings; a stored Qwen3 selection now falls back to a working engine.</li>
+        </ul>
+        <h4>Screenshots</h4>
+        <ul>
+          <li>Escape now closes the screenshot editor in a single press.</li>
+          <li>The first drag after opening area capture now registers immediately.</li>
+        </ul>
+        <h4>Installer</h4>
+        <ul>
+          <li>The install disk image no longer shows stray system folders next to the app.</li>
+        </ul>
+        <h3>Bug Fixes</h3>
+        <h4>Launcher</h4>
+        <ul>
+          <li>Fixed the search bar losing keyboard focus after choosing an item from the actions menu.</li>
+          <li>The launcher now closes when you swipe to a newly created desktop in Stage Manager or Mission Control, matching how it already behaved on existing desktops.</li>
+          <li>The launcher now also closes when Mission Control opens.</li>
+          <li>Newly installed apps now show up in search results as soon as their installation finishes, without relaunching SuperCmd.</li>
+        </ul>
+        <h4>Menu Bar</h4>
+        <ul>
+          <li>The menu bar menu now opens attached to the SuperCmd icon instead of floating near the edge of the screen, and its items show their icons again.</li>
+        </ul>
+        <h4>Widgets</h4>
+        <ul>
+          <li>The calendar widget's permission prompt now appears on fresh installs instead of failing silently.</li>
+        </ul>
+        <h4>Stability</h4>
+        <ul>
+          <li>Fixed a crash when Check for Updates, a Settings deep link, or the chat model picker was the first Settings entry of the session.</li>
+          <li>Fixed the launcher opening invisibly on macOS 26 after closing the desktop space it was last shown on; the window now rebuilds itself automatically.</li>
+          <li>On the macOS 27 beta, SuperCmd now survives a system AutoFill bug that crashed the app whenever one of its windows came forward. If macOS trips the bug, the affected window stays in place — invoking it again brings it forward.</li>
+        </ul>
+        <h4>Crash Reporting</h4>
+        <ul>
+          <li>Crash reports now include the underlying exception message instead of only a signal name.</li>
+          <li>Closing the crash report panel with X now means Don't Send, and the close button is easier to hit.</li>
+          <li>Fixed normal shutdowns from before a reboot being reported as crashes on the next launch.</li>
+          <li>Fixed test runs on development machines filing crash reports.</li>
+          <li>Fixed a crash observed by both the crash recorder and macOS filing two reports for the same exit.</li>
+        </ul>
+]]></description>
+      <enclosure url="https://github.com/SuperCmdLabs/SuperCmd-v2-releases/releases/download/1.0.5/SuperCmd.dmg" type="application/octet-stream" sparkle:edSignature="ecThE4RRWfl18Kcxws/NgB/jimitwGXvsq3llmRwRwZdfS8wAvdchpGuGKNyRkd6rw/M+eZkJZBNaMrQdyO2Bw==" length="20411235" />
+    </item>
+    <item>
       <title>SuperCmd 1.0.4</title>
       <pubDate>Fri, 07 Aug 2026 05:08:33 +0000</pubDate>
       <sparkle:version>5</sparkle:version>
