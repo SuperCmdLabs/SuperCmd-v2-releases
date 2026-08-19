@@ -3,6 +3,149 @@
   <channel>
     <title>SuperCmd</title>
     <item>
+      <title>SuperCmd 1.0.6</title>
+      <pubDate>Thu, 20 Aug 2026 00:00:00 +0000</pubDate>
+      <sparkle:version>7</sparkle:version>
+      <sparkle:shortVersionString>1.0.6</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h3>New Features</h3>
+        <h4>Launcher</h4>
+        <ul>
+          <li>Launcher rows now show the global shortcut assigned to them, as keycaps beside the name.</li>
+          <li>Added ⌘Up and ⌘Down to jump the results list a section at a time.</li>
+          <li>Added searchable dropdowns throughout the app, opened with ⌘P, with a filter field, arrow navigation, and Return to pick.</li>
+          <li>Added command history: pressing Up in an empty search field recalls previously run queries, newest first.</li>
+          <li>Added a Check for Updates command, which reports the result in the toast pill instead of opening Settings.</li>
+          <li>Added a Quit SuperCmd command.</li>
+        </ul>
+        <h4>Window Management</h4>
+        <ul>
+          <li>Added a Toggle Fullscreen action that uses the real macOS fullscreen mode, the same as the green title bar button.</li>
+          <li>One shortcut can now be assigned to several window actions and cycles through them on each press, in the order the Window Management tab lists them. Shared shortcuts carry a badge showing their position in the cycle.</li>
+        </ul>
+        <h4>AI</h4>
+        <ul>
+          <li>Added Grok as an AI provider, signed in with a SuperGrok or X Premium subscription rather than an API key.</li>
+        </ul>
+        <h4>Dictation</h4>
+        <ul>
+          <li>Added Parakeet v3, a multilingual checkpoint covering 25 European languages, installable and removable alongside the existing English one.</li>
+          <li>Added a dictation language setting. Choose Automatic, or state the language you speak and have it passed to the engine, which stops speech being detected as the wrong language or silently translated.</li>
+          <li>The engine is now chosen from a single dropdown, and the language list offers only the languages that engine can actually transcribe, with a warning when a stored choice is not covered.</li>
+        </ul>
+        <h4>Calculator</h4>
+        <ul>
+          <li>A bare foreign currency amount now converts to your region's currency at the live rate, with the rate shown beneath the result. An explicit target such as <code>$5 in eur</code> still wins.</li>
+          <li>Added rates for currencies the European Central Bank feed does not publish.</li>
+        </ul>
+        <h4>Settings</h4>
+        <ul>
+          <li>Settings search now finds individual rows, including commands, applications, window actions, quicklinks, Apple Shortcuts, and extension commands, rather than only tabs and section headings.</li>
+          <li>Results are grouped under headings, carry the real icon of the row they stand for, and can be walked with the arrow keys and opened with Return.</li>
+          <li>Choosing a result, or Configure Command from the launcher, now scrolls to the exact row and highlights it.</li>
+          <li>Clipboard History settings now list the applications SuperCmd blocks by default, so it is clear which password managers are already covered.</li>
+        </ul>
+        <h4>Extensions</h4>
+        <ul>
+          <li>Added Uninstall Extension to an extension command's actions menu, with ⌘Delete as its shortcut.</li>
+        </ul>
+        <h4>Screenshots</h4>
+        <ul>
+          <li>Return now opens a full size preview of the selected capture inside the panel, with the arrow keys still paging through history. ⌘Return opens the annotation editor.</li>
+          <li>Every annotation tool now shows and responds to its number key, and the editor gained shortcuts for copy, save, pin to screen, copy text, and clear all.</li>
+        </ul>
+        <h4>Emoji</h4>
+        <ul>
+          <li>Added the plain directional arrows ↑ → ↓ ← to the symbols category.</li>
+        </ul>
+        <h3>Improvements</h3>
+        <h4>Energy and Performance</h4>
+        <ul>
+          <li>Fixed the largest source of SuperCmd's energy use. Menu bar extensions were refreshing on set interval</li>
+          <li>The menu bar status item is now repainted only when what it displays actually changes, instead of on every extension tick.</li>
+          <li>Improvements for Snippet Engine.</li>
+          <li>The agent pill stack no longer runs a continuous timer when no agent is running.</li>
+          <li>Fixed a key monitor and a timer leaking on every Quick Prompt and clipboard editor use.</li>
+          <li>Launcher results now appear in the same frame as the keystroke: search debounces are gone, the file index scan runs in parallel, and stale rows no longer flash between keystrokes.</li>
+        </ul>
+        <h4>Launcher</h4>
+        <ul>
+          <li>The launcher now learns which command you choose for a query, so a result you keep picking rises to the top for that query.</li>
+          <li>A command's own hotkey now closes its screen when it is already open, matching how the launcher hotkey toggles.</li>
+          <li>Momentum scrolling in the panel now carries further after a trackpad flick instead of stopping abruptly.</li>
+          <li>Show Files in Launcher is now off by default, and with it off the file index no longer warms on panel show, so a new install is not asked for Desktop, Documents, and Downloads access. Existing choices are kept, and the Search Files command is unaffected.</li>
+          <li>Arrow keys in the actions menu now stop at the ends instead of wrapping around onto destructive rows.</li>
+          <li>Extension commands now show the Command kind label, matching every other row.</li>
+          <li>Web apps installed from a browser now show that browser's name, so two copies of the same site can be told apart, and <code>chrome youtube</code> finds the right one.</li>
+          <li>System Settings panes and saved quicklinks now carry a parent subtitle, and the top section is titled Results while typing.</li>
+          <li>Footer pills now nest evenly inside the panel's corner curve at every content size, and the panel's edge highlight is dimmer in dark mode.</li>
+          <li>Row typography is consistent across kinds, and the selected row no longer changes weight or draws an outline.</li>
+          <li>The footer's Actions button is now clickable in every mode that shows it, including the Extension Store, Clipboard, Emoji, Camera, Screenshots, Snippets, Notes, Schedule, and Quicklinks.</li>
+          <li>⇧⌘P is now the pin shortcut everywhere, ⌘P toggles the filter dropdown open and closed, and unpinning keeps the highlight on the row.</li>
+        </ul>
+        <h4>Window Management</h4>
+        <ul>
+          <li>The quarter actions are now ordered clockwise from the top left, both in the settings list and in a shared shortcut's cycle.</li>
+        </ul>
+        <h4>Notes</h4>
+        <ul>
+          <li>An unpinned note now stays in front while you are working in it, instead of dropping behind the application underneath.</li>
+        </ul>
+        <h4>Settings</h4>
+        <ul>
+          <li>Search Quicklinks and Create Quicklink now have rows in Settings, so both can take a global shortcut and an alias.</li>
+        </ul>
+        <h4>Privacy</h4>
+        <ul>
+          <li>Passwords app is by default added in the disabled applications for the clipboard.</li>
+        </ul>
+        <h4>Crash Reporting</h4>
+        <ul>
+          <li>Crash reports now record which binary they came from, so a report can be paired with the symbols that decode its stack, and a release built without those symbols is rejected instead of shipping.</li>
+        </ul>
+        <h3>Bug Fixes</h3>
+        <h4>Crashes</h4>
+        <ul>
+          <li>Fixed the app being killed whenever text recognition failed on a copied image. Copying a one pixel tracking image from a web page was enough to trigger it.</li>
+          <li>Fixed the crash that ended every dictation session using Parakeet.</li>
+        </ul>
+        <h4>System Actions</h4>
+        <ul>
+          <li>Fixed Lock Screen only putting the display to sleep and leaving the session unlocked. It now locks immediately, and says so when it cannot.</li>
+        </ul>
+        <h4>Keyboard</h4>
+        <ul>
+          <li>Fixed Hyper Key chords also toggling Caps Lock when Quick Press is set to Toggles Caps Lock.</li>
+          <li>Fixed ⌘Q quitting SuperCmd instead of the application you were looking at. Quit is still available from the menus and as a launcher command, without a keyboard shortcut.</li>
+        </ul>
+        <h4>Quicklinks</h4>
+        <ul>
+          <li>Fixed pressing Return on a quicklink with arguments leaving the panel with nothing focused, so typing went nowhere and the screen could only be left backwards.</li>
+          <li>Arguments now fill in place instead of on a separate screen, the pills stay visible, and ← and → walk between the search field and each argument.</li>
+        </ul>
+        <h4>Extensions</h4>
+        <ul>
+          <li>Fixed extension actions that name an application, such as Open in Cursor, opening in the default application instead.</li>
+          <li>Fixed list and grid sections drawing a heading with no rows beneath it.</li>
+          <li>Fixed the translate extension's language selector never appearing, which made the extension unusable.</li>
+          <li>Fixed the Extension Store showing "No extensions available" when reopened within the Pop to Root window.</li>
+        </ul>
+        <h4>Screenshots</h4>
+        <ul>
+          <li>Fixed clicking a thumbnail taking the full double click interval to select.</li>
+          <li>Fixed Pin to Screen also pinning the capture to the top of the library permanently.</li>
+          <li>Fixed annotations drawing thinner in the editor than in the exported image, and arrowheads drawing hollow in the editor and solid on export.</li>
+        </ul>
+        <h4>Dictation</h4>
+        <ul>
+          <li>Fixed Mistral transcription failing with an invalid model error for anyone who had selected Voxtral Small. That model is not served by the transcription endpoint, so it is no longer offered and existing selections fall back to a working one.</li>
+          <li>Fixed Parakeet reporting itself as not installed when its files were already on disk, or as installed after they had been deleted.</li>
+        </ul>
+]]></description>
+      <enclosure url="https://github.com/SuperCmdLabs/SuperCmd-v2-releases/releases/download/1.0.6/SuperCmd.dmg" type="application/octet-stream" sparkle:edSignature="xR3dHTdo9pSxAmdiOpQGV/IP8IjN7aLJkJSUA+MCZTOkznGaj7qOlCD+O8IXPuj7ja1SvhKRLJFMy3A9LTyrBw==" length="20671756" />
+    </item>
+    <item>
       <title>SuperCmd 1.0.5</title>
       <pubDate>Tue, 11 Aug 2026 14:00:00 +0000</pubDate>
       <sparkle:version>6</sparkle:version>
