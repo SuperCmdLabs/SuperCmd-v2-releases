@@ -3,6 +3,124 @@
   <channel>
     <title>SuperCmd</title>
     <item>
+      <title>SuperCmd 1.0.7</title>
+      <pubDate>Wed, 02 Sep 2026 23:51:47 +0000</pubDate>
+      <sparkle:version>8</sparkle:version>
+      <sparkle:shortVersionString>1.0.7</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h3>New Features</h3>
+        <h4>Launcher</h4>
+        <ul>
+          <li>Every Quick AI preset is now a launcher row, so typing "fix grammar" runs it directly instead of going through Quick Prompt first.</li>
+          <li>Added Toggle System Appearance, which switches macOS between Light and Dark. Searching "dark mode" finds it.</li>
+          <li>iCloud and other sections inside System Settings now appear as results, not just the top-level panes.</li>
+          <li>Built-in commands can be switched off from Settings → Commands, or with Disable Command (⌘⇧D) in a row's ⌘K menu. A disabled command leaves the launcher along with its hotkey and alias.</li>
+          <li>The search bar's icon is now a choice in Settings → General: a magnifying glass (the new default), the SuperCmd mark, no icon, or any emoji.</li>
+          <li>⌘W closes the panel, and the next open starts at the main menu regardless of the Pop to Root delay.</li>
+          <li>Files, folders, and apps can be dragged out of the launcher and Search Files into Finder, the Dock, or any app. Clipboard entries drag out too, as the text, link, file, or image they hold. ESC cancels a drag.</li>
+          <li>Added Copy Path (⌥⌘C) to file and folder rows.</li>
+          <li>Added Send via Email (⇧⌘E), which starts a Mail draft with the selected file attached, from launcher file rows, Search Files, and clipboard file entries.</li>
+          <li>Create Quicklink now appears in the ⌘K menu of any URL result, with the link prefilled.</li>
+          <li>A calculation left on screen when the launcher closes can be recalled with ↑ in an empty search field, like any other query.</li>
+        </ul>
+        <h4>Window Management</h4>
+        <ul>
+          <li>Added Center Half (⌃⌥⇧C), a half-width column centered on the screen, for wide displays.</li>
+          <li>Added Next Display and Previous Display, which move the focused window to another screen while keeping its relative size and position.</li>
+          <li>Added Move to Next Space and Move to Previous Space, which carry the focused window to the adjacent desktop.</li>
+          <li>Window Management can be switched off entirely in Settings, which also frees its shortcuts for other apps. A Reset to Defaults button restores the stock bindings.</li>
+          <li>App hotkeys now switch to an app on another Space instantly, without the slide animation. Pressing the hotkey again either cycles through the app's windows or hides the app, chosen under Settings → Applications → When Pressed Again.</li>
+        </ul>
+        <h4>Search Files</h4>
+        <ul>
+          <li>Opens on Recently Used, the files you last worked on, with the first one selected so the preview is never empty.</li>
+          <li>Tab on a folder lists its contents, ⇧Tab climbs back up, and typing a path such as <code>~/Documents/rep</code> browses that folder narrowed to "rep". In the launcher, Tab on a folder row hands off to Search Files.</li>
+        </ul>
+        <h4>Notes</h4>
+        <ul>
+          <li>Typing in the notes browser highlights every match inside the selected note. ⇥ / ⇧⇥ and ⌘G / ⇧⌘G step through them.</li>
+          <li>⌘F opens a find bar in a floating note window, with the same highlighting and cycling.</li>
+        </ul>
+        <h4>AI</h4>
+        <ul>
+          <li>Quick Prompt shows the model's edit as a diff before it lands: removed lines in red, added lines in green, changed words highlighted. ↩ applies, ESC rejects, and you can type a follow-up such as "make it shorter" or edit the result in place (⌘E) before applying. Turn it off under Settings → Quick Prompt → Review changes before applying.</li>
+          <li>Grok gained a reasoning effort setting, in Settings → AI and in the chat window. It defaults to Automatic, which sends nothing and leaves the model's own behaviour unchanged.</li>
+          <li>Chat shows the model's thinking as a collapsible Thought process section above the answer, for Grok, ChatGPT, and OpenRouter models that report it.</li>
+          <li>Images can be pasted straight into the AI Chat composer.</li>
+          <li>AI Chat errors show the provider's own message with a Retry button. Web search is now opt-in per chat from the + menu, and if the search tool fails before the model answers, the chat falls back to a plain answer and says so.</li>
+          <li>Added a master Enable AI Features switch in Settings → AI, plus per-feature switches for Dictation, Read Aloud, Quick Prompt, Agents, and AI Chat. Off means the feature's commands, hotkeys, and models are gone, not hidden.</li>
+        </ul>
+        <h4>Settings</h4>
+        <ul>
+          <li>Added an emoji skin tone preference under Advanced. It applies to the emoji picker and to what gets pasted, and your recents keep working.</li>
+          <li>The Extensions pane now links to the Extension Store.</li>
+          <li>The last onboarding step offers Open at Login, ticked.</li>
+        </ul>
+        <h4>Clipboard</h4>
+        <ul>
+          <li>Re-copying something already in history moves the existing entry to the top instead of adding a duplicate, wherever it was in the list.</li>
+        </ul>
+        <h4>Browsers</h4>
+        <ul>
+          <li>Dia browser history and bookmarks are now searchable.</li>
+        </ul>
+        <h3>Improvements</h3>
+        <h4>Performance</h4>
+        <ul>
+          <li>The launcher opens faster. App discovery and icon loading moved off the main thread, the command list only rebuilds when something changed, and extension prewarming waits until the panel is on screen.</li>
+          <li>Searching clipboard history no longer freezes the panel when history holds large clips. Search runs against an index in the database, and previews are bounded.</li>
+          <li>Extension host processes exit when SuperCmd quits or crashes, so they no longer linger and burn CPU.</li>
+          <li>Scratch files left behind by an interrupted file-index build are cleaned up at launch.</li>
+        </ul>
+        <h4>Launcher</h4>
+        <ul>
+          <li>Input methods such as Pinyin, Japanese, and Korean now work in the search field: results narrow while you compose, Return commits the candidate, and ESC abandons it.</li>
+          <li>Apps that declare themselves as background-only despite having a window (BetterDisplay, Parsec) and Steam game shortcuts now appear in the launcher.</li>
+          <li>App hotkey jumps across several Spaces no longer flash the desktops in between.</li>
+          <li>The ⌘ pill stays in the footer while typing, so the app menu is always reachable.</li>
+          <li>The quicklink editor is fully keyboard-driven: Tab and Return move from Link to Name to Tags, and tag suggestions render in full instead of being clipped.</li>
+        </ul>
+        <h4>Window Switcher</h4>
+        <ul>
+          <li>Windows stacked exactly on top of each other fold into one tile marked ×N. Tiles are ordered by how often you use each app, then by position on screen, and no longer reshuffle when you click a window.</li>
+        </ul>
+        <h4>AI</h4>
+        <ul>
+          <li>Quick Prompt stays open when another app takes focus while you type, and remembers its own position separately from the launcher.</li>
+          <li>AI Chat conversation previews in the sidebar render as plain text rather than raw Markdown.</li>
+          <li>OpenAI reasoning models now accept tool calls, so web search works with them.</li>
+        </ul>
+        <h4>Read Aloud</h4>
+        <ul>
+          <li>The macOS voice list no longer shows the same name a dozen times. Voices shared across locales are labelled with their language.</li>
+        </ul>
+        <h4>Settings</h4>
+        <ul>
+          <li>Every Settings search field focuses when you click anywhere on the pill, and the extensions list is a single card.</li>
+        </ul>
+        <h4>Localization</h4>
+        <ul>
+          <li>Every toast is now localized, and 131 interface strings that still fell back to English are translated in all ten languages.</li>
+        </ul>
+        <h3>Bug Fixes</h3>
+        <ul>
+          <li>Fixed three crashes seen in field reports: a layout exception when the panel opened at the Medium content size, an audio assertion when dictation or voice capture stopped, and crashes that left no report because a stack overflow had no room to run the handler. Crash reports now capture stack overflows.</li>
+          <li>Search Menu Items now fires items in Electron apps such as Cursor, VS Code, and Slack.</li>
+          <li>Currency amounts typed with two decimals, such as <code>$34.44</code>, convert again.</li>
+          <li>The Search Files preview no longer blanks while arrowing through results.</li>
+          <li>Snippets pasted from the panel place the cursor at <code>{cursor}</code>, matching keyword expansion.</li>
+          <li>The screenshot editor's close dot closes the panel, like ESC, instead of dropping you on the library.</li>
+          <li>Dragging a file into a Finder folder copies it instead of leaving an alias.</li>
+          <li>Drags out of the launcher into web composers now land. A synthetic paste no longer leaves Command held down system-wide, which had been turning every drag on the machine into a move.</li>
+          <li>Raycast 2.x backups (the RAYCFG3 format) now import, including hotkey and window settings, instead of previewing as empty.</li>
+          <li>Cancelling a Quick Prompt run mid-stream no longer pastes the partial result and closes the panel.</li>
+          <li>⌘C in AI Chat with nothing selected copies the reply instead of wiping the clipboard.</li>
+        </ul>
+]]></description>
+      <enclosure url="https://github.com/SuperCmdLabs/SuperCmd-v2-releases/releases/download/1.0.7/SuperCmd.dmg" type="application/octet-stream" sparkle:edSignature="k0hBHi1TORARynq+ebk8dMc5hg7HtvVHew5ZSfI9zptc8p4sYsOMMI7Wh98eQE2osq++KXr3FaYaSeLNo53tDw==" length="21085586" />
+    </item>
+    <item>
       <title>SuperCmd 1.0.6</title>
       <pubDate>Thu, 20 Aug 2026 00:00:00 +0000</pubDate>
       <sparkle:version>7</sparkle:version>
@@ -452,7 +570,7 @@
           <li>Fixed clipboard image search, first-result selection, and stale row styling or duplicate shortcut badges after pinning and unpinning.</li>
           <li>Fixed global snippet expansion failing to recover after macOS disabled its event tap.</li>
         </ul>
-      ]]></description>
+]]></description>
       <enclosure url="https://github.com/SuperCmdLabs/SuperCmd-v2-releases/releases/download/1.0.3/SuperCmd.dmg" type="application/octet-stream" sparkle:edSignature="mHF+ZBQUys6QZ94ZmiWIVwStYDkVnNt7ukwOKY0iBbtXlnyFUTxZffL4Z+vKX2NutKSjrHmJXUEn6kYYPuV4CA==" length="18590517" />
     </item>
     <item>
@@ -483,7 +601,7 @@
           <li>Fixed crashes triggered by snippet keyword expansion.</li>
           <li>Fixed Browser History search not respecting its Settings toggle.</li>
         </ul>
-      ]]></description>
+]]></description>
       <enclosure url="https://github.com/SuperCmdLabs/SuperCmd-v2-releases/releases/download/1.0.2/SuperCmd.dmg" type="application/octet-stream" sparkle:edSignature="fpMFCJVuour82QdyXjSoyO90HhDH0Aty4Rnwft9ax7S6GLvTP753yK0nYpRTAR38OWfzbHBTuiZxkmW8IdgxCg==" length="18157837" />
     </item>
     <item>
@@ -541,7 +659,7 @@
           <li>Updates open in a real window.</li>
           <li>Onboarding no longer warms the file index while you're still setting up.</li>
         </ul>
-      ]]></description>
+]]></description>
       <enclosure url="https://github.com/SuperCmdLabs/SuperCmd-v2-releases/releases/download/1.0.1/SuperCmd.dmg" type="application/octet-stream" sparkle:edSignature="sRx9zFvkaiLW5Hk8IcA9P1M8qPs4GXqkQ6Uq1zvJnaTUJkHJk7K6uIMfQAp+aubXs9uw08USBjRpT0G/z1zfCg==" length="18097089" />
     </item>
   </channel>
