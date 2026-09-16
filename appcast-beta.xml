@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0"><channel><title>SuperCmd Beta</title><item>
+<title>SuperCmd Beta 1.0.8-beta</title>
+<pubDate>Wed, 16 Sep 2026 23:49:18 +0000</pubDate>
+<sparkle:version>1</sparkle:version>
+<sparkle:shortVersionString>1.0.8-beta</sparkle:shortVersionString>
+<sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+<description>First separate SuperCmd Beta build, version 1.0.8-beta (1).
+
+- Installs as SuperCmd Beta with a separate app identifier.
+- Keeps local preferences, history, and extension data separate from the stable app.
+- Uses an independent beta update feed; stable users remain on the stable channel.
+
+Requires macOS 15 or later and Apple silicon.
+
+Run one channel at a time for global hotkeys and browser sign-in. Account credentials and the supercmd:// callback scheme remain shared with stable.
+</description>
+<enclosure url="https://github.com/SuperCmdLabs/supercmd-v2-releases/releases/download/beta-v1.0.8-beta-1/SuperCmd-Beta-1.0.8-beta-1.dmg" type="application/octet-stream" sparkle:edSignature="SIKAtKjqxEVjsJK04Ry94NqLT4gnbDBJOYKwAA628fZkSZ6A7G/1lE22D3pEYpxQ3qldjBB0P+4U3OygO0z3DA==" length="25097825" />
+</item></channel></rss>
