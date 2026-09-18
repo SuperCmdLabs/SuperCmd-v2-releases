@@ -3,6 +3,188 @@
   <channel>
     <title>SuperCmd</title>
     <item>
+      <title>SuperCmd 1.0.8</title>
+      <pubDate>Fri, 18 Sep 2026 23:27:49 GMT</pubDate>
+      <sparkle:version>9</sparkle:version>
+      <sparkle:shortVersionString>1.0.8</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h3>New Features</h3>
+        <h4>Search Contacts</h4>
+        <ul>
+          <li>Added Search Contacts: the address book on the left, the selected card on the right with avatar, phone, email, and company. Searching "call", "phone call" or "facetime" finds it.</li>
+          <li>Return opens the card in Contacts. Call via Phone (⇧⌘P), FaceTime (⇧⌘F), FaceTime Audio (⇧⌘A), Send Message (⇧⌘M), Copy Full Name (⇧⌘C), Copy Phone Number (⌥⌘C).</li>
+          <li>The ⌘K menu adds one Call row per extra number, plus Copy Email.</li>
+        </ul>
+        <h4>Calendar / My Schedule</h4>
+        <ul>
+          <li>SuperCmd now watches your calendar with the panel closed, so a card can appear before a meeting starts, offering Join, Copy Link, and dismiss.</li>
+          <li>Reminders ship on, 10 minutes and 1 minute ahead. Either lead time can be changed, set to At start, or switched off.</li>
+          <li>Auto-Join opens the link for you. Off by default, and can ask first with a ten-second countdown. It never joins a call you already missed.</li>
+          <li>Added Join Next Meeting, which joins the meeting already under way if there is one — which is when you actually press it.</li>
+          <li>An opt-in menu-bar item counts down to your next meeting, with Join Meeting, Open in Calendar, My Schedule, and Calendar Settings.</li>
+          <li>Meeting links open in the browser you choose, under Settings → Calendar.</li>
+          <li>Supported Zoom and Teams links open in their own apps when installed. On by default.</li>
+          <li>Choose which calendars are watched, each keeping its own colour, with search.</li>
+          <li>An Enable Calendar switch turns the whole feature off without discarding its settings.</li>
+          <li>Added Settings → Calendar, which can request calendar access itself. Before, the only way to grant it was to find My Schedule first.</li>
+          <li>In My Schedule, Return now joins the selected meeting when it has a link. Up Next lists only meetings that have not started, and rolls over on its own.</li>
+        </ul>
+        <h4>Extensions</h4>
+        <ul>
+          <li>Development extensions: point SuperCmd at a folder of Raycast-style source and run it without Raycast, Node, or npm. It installs the dependencies, builds, and rebuilds on save.</li>
+          <li>Extensions are opted in one at a time, so a clone of raycast/extensions adds no launcher rows until you pick one. Each row shows its build state, Retry, and Reveal in Finder.</li>
+          <li>Build output lands outside your folder, and switching an extension off never touches your source.</li>
+          <li>Added Import Extension, which picks a folder and lands on the Extensions pane.</li>
+          <li>Installed extensions and individual commands can be switched off in Settings → Extensions. Off means gone — no row, alias, pin, hotkey, deep link, menu-bar item, or AI tool — while preferences and sign-ins survive. The choice syncs to your other Macs.</li>
+        </ul>
+        <h4>Window Management</h4>
+        <ul>
+          <li>Added Window Gap (None, 8, 12, 24, 32, 48, 64 px), the room left between two tiled windows. Screen edges stay flush and thirds stay equal.</li>
+          <li>Added Center Two Thirds (⌃⌥⇧E), the centered column missing between Center Half and Almost Maximize.</li>
+          <li>Added Minimize Window. It ships unbound.</li>
+          <li>Added Zoom, which performs the app's own zoom like the green button, and Fill now reproduces macOS's Fill, margins included, instead of being a second Maximize.</li>
+          <li>Move to Next/Previous Space carries the window by pressing its title bar, so it works on real apps rather than only a bare AppKit window. A fullscreen window is refused with a reason.</li>
+          <li>Move to Next/Previous Display now works on a fullscreen window.</li>
+          <li>The ⌥Tab Window Switcher is now a setting, default off. A separate option includes windows from every Desktop and switches Desktop when you pick one.</li>
+        </ul>
+        <h4>Keyboard</h4>
+        <ul>
+          <li>Escape can be part of a global hotkey, so ⌃ESC records and binds. A bare Escape still cancels recording.</li>
+          <li>Added Auto-switch Input Source: a layout installed while SuperCmd is open and handed back when it closes, so English commands typed with a CJK or Vietnamese input method no longer vanish into a composition buffer. Automatic follows your current source, or pick a layout.</li>
+          <li>It applies in every panel mode, and keeps applying inside floating note windows.</li>
+          <li>Added Settings → Keyboard, collecting Navigation Bindings, Auto-switch Input Source, and the Hyper Key.</li>
+        </ul>
+        <h4>Clipboard</h4>
+        <ul>
+          <li>Return's action is now a choice: Settings → Clipboard History → Actions, Paste to Active App or Copy to Clipboard. The two trade keys, so neither is left unbound, and the footer pill and ⌘1…⌘9 follow.</li>
+        </ul>
+        <h4>Launcher</h4>
+        <ul>
+          <li>Every shortcut a ⌘K row shows now fires from the highlighted row without opening the menu. ⌘C on a history row, ⇧⌘R on a clipboard file, ⌘D on a note or snippet and ⇧⌘I on a screenshot did nothing at all before.</li>
+          <li>Quit App, Restart App, Force Quit, and Disable App no longer need ⌘K pressed first.</li>
+          <li>Escape resets the panel to the empty launcher before closing, even from a command's own hotkey.</li>
+          <li>Backspace in an empty search field goes back within the flow instead of closing the panel.</li>
+          <li>Argument pills follow the caret instead of parking mid-bar, and Escape keeps the pills and whatever you typed into them.</li>
+          <li>Added Search Scopes to Settings → Applications: every folder searched for apps, with a "+" for your own. Folders not on this Mac are marked, not dropped.</li>
+          <li>The built-in list grows from five folders to twelve — ~/Applications, both cryptexes, both PreferencePanes folders, System Settings' plug-ins — so third-party preference panes and the About and Software Update panels are searchable.</li>
+          <li>The launcher's position is remembered per display, so a drag on one monitor no longer moves the spot parked on the others.</li>
+          <li>Search Menu Items and Extension Store gained Settings → Commands rows, for a hotkey or an alias.</li>
+          <li>Quicklinks, Scripts, Screenshots, and Terminal have master switches, and a disabled tool stops its commands, hotkeys, and background work. Fresh installs start with them off; anything you already set is carried over.</li>
+          <li>Eject All Disks reports success only once Finder has finished, and reports failures and denied permissions.</li>
+          <li>The calculator answers zone-only time queries: "est time now", "time est", "new york time now".</li>
+        </ul>
+        <h4>Screenshots</h4>
+        <ul>
+          <li>Added a save location under Settings → Screenshots: every capture auto-saved as a timestamped PNG and overwritten with your annotations.</li>
+          <li>Added When a screenshot is taken: open the editor, or copy to the clipboard and stop.</li>
+          <li>Added Done, which saves annotations without touching the clipboard, and Cancel, which discards. Plain close used to keep the raw capture and drop the annotations.</li>
+          <li>The colour picker is now a full-screen overlay: Escape cancels, a click anywhere picks. It can no longer get stuck.</li>
+          <li>Screenshot text is indexed automatically, so library search finds words in any capture, not just the ones where you ran Copy Text.</li>
+        </ul>
+        <h4>Notes</h4>
+        <ul>
+          <li>Notes carry searchable aliases, shown under the title and carried through sync and backups.</li>
+          <li>Pin Note and Unpin Note now carry ⇧⌘P. Both were missing from every language, English included.</li>
+          <li>Deleting a note says plainly that its Markdown file stays in your folder.</li>
+        </ul>
+        <h4>AI</h4>
+        <ul>
+          <li>Web search works with every provider. Models without reliable tool calling, Apple Intelligence included, use app-managed retrieval, and a search that fails says so.</li>
+          <li>Sources are a compact control with site favicons, a count, and clickable rows.</li>
+          <li>Quick AI gains its own globe toggle, and your last choice becomes the default for new chats.</li>
+          <li>Tab on an empty launcher opens a blank Quick AI draft, which can hand off to the chat window.</li>
+          <li>The AI Chat hotkey toggles the window that is already open, keeping the conversation, composer, and in-flight stream intact.</li>
+          <li>Chat windows appear in the ⌥Tab switcher.</li>
+          <li>The model you pick becomes the default for new conversations, and a resized window reopens at that size.</li>
+          <li>OpenRouter gained Maximum Output Tokens, sending 4096 by default instead of inheriting a limit large enough to fail credit reservation.</li>
+        </ul>
+        <h4>Dictation</h4>
+        <ul>
+          <li>OpenRouter transcription grows from three models to twenty: GPT Transcribe, GPT-4o Transcribe and Mini, Whisper 1, Whisper Large V3 and Turbo, GPT Audio and Mini, Voxtral Small 24B, and the Gemini 2.5 and 3.x line.</li>
+        </ul>
+        <h4>Snippets</h4>
+        <ul>
+          <li>A bare <code>{date}</code> renders in your own locale and time zone, while an explicit format is left as written. The same applies in quicklinks.</li>
+          <li>Creating a snippet focuses the content field, shows a date-format hint, and offers a placeholder picker.</li>
+        </ul>
+        <h3>Improvements</h3>
+        <h4>Performance</h4>
+        <ul>
+          <li>Typing in the launcher is no longer blocked by the file index. The same-frame scan is measured against your own index and taken only when it fits in a frame — it had cost about 17 ms per keystroke in release builds and two seconds in debug ones.</li>
+          <li>Idle memory is bounded: Settings releases its view tree on close, local model containers expire after 90 seconds, browser history and icon caches drop under pressure, camera resources wait for first use, clipboard pages load on demand, and AI Chat releases its hierarchy.</li>
+          <li>Extension hosts retain less and exit cleanly, with bounded action retention, a bundle cache, scoped timers, an orphan sweep, and one shutdown deadline for every host.</li>
+          <li>Panel show work is paced after the panel is on screen, rather than ahead of the first frame.</li>
+          <li>The calendar watcher arms no timer and holds nothing while nothing consumes it.</li>
+        </ul>
+        <h4>Download Size</h4>
+        <ul>
+          <li>The DMG is 13.8 MB, down from 25.1 MB: LZMA instead of zlib, dead x86_64 slices stripped, Sparkle's sandbox-only helpers dropped, UTF-8 language catalogs, a minified extension host, lighter assets. The dependency graph is pinned so it cannot grow back.</li>
+        </ul>
+        <h4>Settings</h4>
+        <ul>
+          <li>Pane content dissolves under the window title instead of scrolling straight through it.</li>
+          <li>The sidebar has a neutral selection, responds on the first keypress, and continues navigation from the item you are on.</li>
+          <li>Search Scopes collapse behind one heading row carrying the count, with Add Folder in the heading.</li>
+          <li>The Extensions pane stays top-aligned, and the toolbar keeps its transparent chrome through pane changes.</li>
+        </ul>
+        <h4>Hyper Key</h4>
+        <ul>
+          <li>The Caps Lock remap survives a keyboard plugged in later, a Bluetooth reconnect, sleep, and a write the keyboard silently refuses. Each keyboard is written and verified separately.</li>
+          <li>When another tool already owns Caps Lock, SuperCmd stands down with a toast instead of fighting it.</li>
+          <li>Only mappings SuperCmd installed are ever cleared, and a failed cleanup stays retryable.</li>
+          <li>The fallback tap ends its hold unconditionally, so a native Caps Lock press no longer left ⌘Tab arriving as Hyper+Tab.</li>
+        </ul>
+        <h4>Notes</h4>
+        <ul>
+          <li>Changing the notes folder copies your notes in first, and keeps the old folder if the copy fails.</li>
+          <li>Folder sync no longer deletes files or notes. Filenames stay stable, a missing file is recreated from its note, and an unreadable one is left alone.</li>
+        </ul>
+        <h4>Window Management</h4>
+        <ul>
+          <li>A hotkey is no longer reserved for an app that is not installed — while the binding itself is kept, since an unplugged drive is not a removal.</li>
+          <li>Uninstalling an app releases its hotkey, alias, pin, and disabled mark, once the bundle is really gone.</li>
+          <li>Space reads and switches are scoped to the display you are on, so a switch no longer fires twice, an app hotkey no longer walks the wrong monitor, and a window cycle no longer jams on windows minimized elsewhere.</li>
+          <li>Display moves walk screens in spatial order and read the frame back.</li>
+        </ul>
+        <h4>AI</h4>
+        <ul>
+          <li>The transcript follows new turns and streaming on its own, and pauses the moment you scroll up.</li>
+          <li>Replies have more room and no provider avatar, so switching provider no longer relabels old replies.</li>
+          <li>Sent attachments line up with your own messages, and clicking one opens a preview that Escape closes.</li>
+          <li>Bare links in a Quick AI answer render as titles or site names, while copying still yields the original Markdown.</li>
+        </ul>
+        <h4>Dictation</h4>
+        <ul>
+          <li>Apple dictation recovers when Fn is released while it is still preparing.</li>
+          <li>Downloaded speech locales are capped at two, so languages you tried once stop accumulating.</li>
+        </ul>
+        <h3>Bug Fixes</h3>
+        <ul>
+          <li>Fixed the largest crash cluster on 1.0.7: the launcher's drop-shadow window could abort the process from inside an AppKit layout pass, arriving in reports as an uncaught exception, as "Signal 6", and as a trap in the display cycle.</li>
+          <li>Fixed a crash caused by two threads using the analytics queue at once, which corrupted the heap.</li>
+          <li>A quit you asked for is no longer reported as a crash on the next launch.</li>
+          <li>Quitting no longer hangs at "Not Responding" on a cloud-sync file iCloud has evicted. Such a file passes every existence check, then blocks on the first read.</li>
+          <li>Every reader of a file you point SuperCmd at now reports an evicted file instead of blocking: snippet import, file preview, chat attachments, agent file reads, both backup importers, and script scanning.</li>
+          <li>Extension grids that never left their loading state now render — Lucide Icons shows all 1,847 icons, and gif-search's loading bar clears.</li>
+          <li>Tinted remote SVGs are masked the way Raycast masks them, so they are visible on a dark tile instead of black on black.</li>
+          <li>A list or grid section's subtitle renders beside its title.</li>
+          <li>Fixed <code>import.meta</code> in bundled extensions, wrapped list titles and subtitles, development-extension icons, and flickering embedded Markdown images.</li>
+          <li>A saved AI model is no longer replaced by an older one when the model catalog is slow at launch.</li>
+          <li>An app hotkey brings a hidden app back with focus, not behind its own windows.</li>
+          <li>Removing an extension from the menu bar sticks across a restart.</li>
+          <li>Shorthand currency conversions keep the currency you asked for instead of your Mac's regional one.</li>
+          <li>Clear All History asks first, and keeps pinned entries.</li>
+          <li>Confirmation dialogs are modal to the keyboard: ⌘⇧↩ no longer pastes, ⌃X no longer deletes, ⇧⌘E no longer mails, and ⌘K no longer opens the actions menu from behind one.</li>
+          <li>The toast stack no longer clips from the third toast on.</li>
+          <li>AI Chat no longer holds a closed conversation's views and images in memory.</li>
+          <li>Fixed the notch at the tip of the arrow annotation in the screenshot editor.</li>
+          <li>The Settings window no longer closes out from under a recorder capturing an Escape chord.</li>
+        </ul>
+]]></description>
+      <enclosure url="https://github.com/SuperCmdLabs/SuperCmd-v2-releases/releases/download/1.0.8/SuperCmd.dmg" type="application/octet-stream" sparkle:edSignature="+cpsnv/i1q34WA08Vl2XhfSpCpq7C4Aa6TFtS6BQlOBKWooOl05QvWrSz3gqd/uHL9DWZ1V0cYnbeu8thAzbDQ==" length="13831788" />
+    </item>
+    <item>
       <title>SuperCmd 1.0.7</title>
       <pubDate>Wed, 02 Sep 2026 23:51:47 +0000</pubDate>
       <sparkle:version>8</sparkle:version>
