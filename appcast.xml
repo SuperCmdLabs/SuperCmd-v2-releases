@@ -4,12 +4,23 @@
     <title>SuperCmd</title>
     <item>
       <title>SuperCmd 1.0.8</title>
-      <pubDate>Fri, 18 Sep 2026 23:27:49 GMT</pubDate>
+      <pubDate>Sat, 19 Sep 2026 13:33:51 GMT</pubDate>
       <sparkle:version>9</sparkle:version>
       <sparkle:shortVersionString>1.0.8</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
       <description><![CDATA[
         <h3>New Features</h3>
+        <h4>AI</h4>
+        <ul>
+          <li>Web search works with every provider. Models without reliable tool calling, Apple Intelligence included, use app-managed retrieval, and a search that fails says so.</li>
+          <li>Sources are a compact control with site favicons, a count, and clickable rows.</li>
+          <li>Quick AI gains its own globe toggle, and your last choice becomes the default for new chats.</li>
+          <li>Tab on an empty launcher opens a blank Quick AI draft, which can hand off to the chat window.</li>
+          <li>The AI Chat hotkey toggles the window that is already open, keeping the conversation, composer, and in-flight stream intact.</li>
+          <li>Chat windows appear in the ⌥Tab switcher.</li>
+          <li>The model you pick becomes the default for new conversations, and a resized window reopens at that size.</li>
+          <li>OpenRouter gained Maximum Output Tokens, sending 4096 by default instead of inheriting a limit large enough to fail credit reservation.</li>
+        </ul>
         <h4>Search Contacts</h4>
         <ul>
           <li>Added Search Contacts: the address book on the left, the selected card on the right with avatar, phone, email, and company. Searching "call", "phone call" or "facetime" finds it.</li>
@@ -47,6 +58,7 @@
           <li>Move to Next/Previous Space carries the window by pressing its title bar, so it works on real apps rather than only a bare AppKit window. A fullscreen window is refused with a reason.</li>
           <li>Move to Next/Previous Display now works on a fullscreen window.</li>
           <li>The ⌥Tab Window Switcher is now a setting, default off. A separate option includes windows from every Desktop and switches Desktop when you pick one.</li>
+          <li>Every window action has its own switch in Settings → Window Management, so you can keep the feature and drop the actions you never use. A switched-off action leaves the launcher and releases its shortcut for other apps.</li>
         </ul>
         <h4>Keyboard</h4>
         <ul>
@@ -58,6 +70,7 @@
         <h4>Clipboard</h4>
         <ul>
           <li>Return's action is now a choice: Settings → Clipboard History → Actions, Paste to Active App or Copy to Clipboard. The two trade keys, so neither is left unbound, and the footer pill and ⌘1…⌘9 follow.</li>
+          <li>Opening Clipboard History from its hotkey shows your latest clips in the very first frame instead of a spinner.</li>
         </ul>
         <h4>Launcher</h4>
         <ul>
@@ -70,6 +83,7 @@
           <li>The built-in list grows from five folders to twelve — ~/Applications, both cryptexes, both PreferencePanes folders, System Settings' plug-ins — so third-party preference panes and the About and Software Update panels are searchable.</li>
           <li>The launcher's position is remembered per display, so a drag on one monitor no longer moves the spot parked on the others.</li>
           <li>Search Menu Items and Extension Store gained Settings → Commands rows, for a hotkey or an alias.</li>
+          <li>System Settings panes are listed under Settings → Commands → System Settings, each with a checkbox, an alias, and a hotkey. Uncheck a pane and it leaves the launcher.</li>
           <li>Quicklinks, Scripts, Screenshots, and Terminal have master switches, and a disabled tool stops its commands, hotkeys, and background work. Fresh installs start with them off; anything you already set is carried over.</li>
           <li>Eject All Disks reports success only once Finder has finished, and reports failures and denied permissions.</li>
           <li>The calculator answers zone-only time queries: "est time now", "time est", "new york time now".</li>
@@ -87,17 +101,6 @@
           <li>Notes carry searchable aliases, shown under the title and carried through sync and backups.</li>
           <li>Pin Note and Unpin Note now carry ⇧⌘P. Both were missing from every language, English included.</li>
           <li>Deleting a note says plainly that its Markdown file stays in your folder.</li>
-        </ul>
-        <h4>AI</h4>
-        <ul>
-          <li>Web search works with every provider. Models without reliable tool calling, Apple Intelligence included, use app-managed retrieval, and a search that fails says so.</li>
-          <li>Sources are a compact control with site favicons, a count, and clickable rows.</li>
-          <li>Quick AI gains its own globe toggle, and your last choice becomes the default for new chats.</li>
-          <li>Tab on an empty launcher opens a blank Quick AI draft, which can hand off to the chat window.</li>
-          <li>The AI Chat hotkey toggles the window that is already open, keeping the conversation, composer, and in-flight stream intact.</li>
-          <li>Chat windows appear in the ⌥Tab switcher.</li>
-          <li>The model you pick becomes the default for new conversations, and a resized window reopens at that size.</li>
-          <li>OpenRouter gained Maximum Output Tokens, sending 4096 by default instead of inheriting a limit large enough to fail credit reservation.</li>
         </ul>
         <h4>Dictation</h4>
         <ul>
@@ -125,7 +128,8 @@
         <ul>
           <li>Pane content dissolves under the window title instead of scrolling straight through it.</li>
           <li>The sidebar has a neutral selection, responds on the first keypress, and continues navigation from the item you are on.</li>
-          <li>Search Scopes collapse behind one heading row carrying the count, with Add Folder in the heading.</li>
+          <li>Every list row's on/off is one small checkbox at the end of the row, the same across Applications, Commands, Window Management, Apple Shortcuts, Extensions, and extension commands.</li>
+          <li>Commands folds into Built-in, System, and System Settings cards that open on demand, and Search Scopes is the same kind of card, with Add Folder in its header. A closed card costs nothing.</li>
           <li>The Extensions pane stays top-aligned, and the toolbar keeps its transparent chrome through pane changes.</li>
         </ul>
         <h4>Hyper Key</h4>
@@ -180,9 +184,10 @@
           <li>AI Chat no longer holds a closed conversation's views and images in memory.</li>
           <li>Fixed the notch at the tip of the arrow annotation in the screenshot editor.</li>
           <li>The Settings window no longer closes out from under a recorder capturing an Escape chord.</li>
+          <li>The search bar's caret is checked after every open and put back if it failed to land, so the panel never comes up with nowhere to type.</li>
         </ul>
 ]]></description>
-      <enclosure url="https://github.com/SuperCmdLabs/SuperCmd-v2-releases/releases/download/1.0.8/SuperCmd.dmg" type="application/octet-stream" sparkle:edSignature="+cpsnv/i1q34WA08Vl2XhfSpCpq7C4Aa6TFtS6BQlOBKWooOl05QvWrSz3gqd/uHL9DWZ1V0cYnbeu8thAzbDQ==" length="13831788" />
+      <enclosure url="https://github.com/SuperCmdLabs/SuperCmd-v2-releases/releases/download/1.0.8/SuperCmd.dmg" type="application/octet-stream" sparkle:edSignature="pHPjAwCYi5d2w8OZb81CG4d67XTZPSCymr2mjOapcrcgDImRhrVicNfaiLs51WFhcG/wLuZummZ9sT3dUp0hDA==" length="13858239" />
     </item>
     <item>
       <title>SuperCmd 1.0.7</title>
