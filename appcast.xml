@@ -97,6 +97,7 @@
         </ul>
         <h4>Notes</h4>
         <ul>
+          <li>Notes can live in a folder you choose, and each note can carry its own alias and hotkey.</li>
           <li>Notes carry searchable aliases, shown under the title and carried through sync and backups.</li>
           <li>Pin Note and Unpin Note now carry ⇧⌘P. Both were missing from every language, English included.</li>
           <li>Deleting a note says plainly that its Markdown file stays in your folder.</li>
