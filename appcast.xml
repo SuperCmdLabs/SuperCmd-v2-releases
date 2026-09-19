@@ -70,7 +70,6 @@
         <h4>Clipboard</h4>
         <ul>
           <li>Return's action is now a choice: Settings → Clipboard History → Actions, Paste to Active App or Copy to Clipboard. The two trade keys, so neither is left unbound, and the footer pill and ⌘1…⌘9 follow.</li>
-          <li>Opening Clipboard History from its hotkey shows your latest clips in the very first frame instead of a spinner.</li>
         </ul>
         <h4>Launcher</h4>
         <ul>
@@ -184,7 +183,6 @@
           <li>AI Chat no longer holds a closed conversation's views and images in memory.</li>
           <li>Fixed the notch at the tip of the arrow annotation in the screenshot editor.</li>
           <li>The Settings window no longer closes out from under a recorder capturing an Escape chord.</li>
-          <li>The search bar's caret is checked after every open and put back if it failed to land, so the panel never comes up with nowhere to type.</li>
         </ul>
 ]]></description>
       <enclosure url="https://github.com/SuperCmdLabs/SuperCmd-v2-releases/releases/download/1.0.8/SuperCmd.dmg" type="application/octet-stream" sparkle:edSignature="pHPjAwCYi5d2w8OZb81CG4d67XTZPSCymr2mjOapcrcgDImRhrVicNfaiLs51WFhcG/wLuZummZ9sT3dUp0hDA==" length="13858239" />
