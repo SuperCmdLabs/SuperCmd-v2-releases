@@ -139,11 +139,6 @@
           <li>Only mappings SuperCmd installed are ever cleared, and a failed cleanup stays retryable.</li>
           <li>The fallback tap ends its hold unconditionally, so a native Caps Lock press no longer left ⌘Tab arriving as Hyper+Tab.</li>
         </ul>
-        <h4>Notes</h4>
-        <ul>
-          <li>Changing the notes folder copies your notes in first, and keeps the old folder if the copy fails.</li>
-          <li>Folder sync no longer deletes files or notes. Filenames stay stable, a missing file is recreated from its note, and an unreadable one is left alone.</li>
-        </ul>
         <h4>Window Management</h4>
         <ul>
           <li>A hotkey is no longer reserved for an app that is not installed — while the binding itself is kept, since an unplugged drive is not a removal.</li>
