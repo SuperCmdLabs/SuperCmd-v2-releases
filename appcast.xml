@@ -3,6 +3,109 @@
   <channel>
     <title>SuperCmd</title>
     <item>
+      <title>SuperCmd 1.0.9</title>
+      <pubDate>Mon, 28 Sep 2026 19:38:19 GMT</pubDate>
+      <sparkle:version>10</sparkle:version>
+      <sparkle:shortVersionString>1.0.9</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h3>New Features</h3>
+        <h4>Custom Window Management</h4>
+        <ul>
+          <li>Added Create Command for Custom Window Size: save your own window position and size, as a fraction of the screen or in points, anchored to any of nine spots, with a live preview of the display. It gets a launcher row, an alias, a hotkey, and a deep link like any other command.</li>
+          <li>Added Create Layout for Custom Window Layout: arrange several apps' windows across your displays and restore them with one command. A layout can open apps that aren't running, pass each one a file, URL, quicklink, or arguments, and minimize or close the other windows.</li>
+          <li>Added Save Current Layout, which captures the windows on screen and snaps their edges to the screen, the usual fractions, and each other.</li>
+          <li>Custom commands and layouts can be edited, duplicated, exported, and imported as JSON, and they sync to your other Macs.</li>
+          <li>Any fixed-size built-in action, such as Left Half, can be duplicated as a starting point for your own command.</li>
+        </ul>
+        <h4>Notes</h4>
+        <ul>
+          <li>A new editor: Markdown renders as you type, while the file on disk stays exactly as written.</li>
+          <li>The note window has a new look: a translucent background, a centered title, and a formatting bar with Heading, Text, and List menus, link, inline code, code block, and quote.</li>
+          <li>Note windows always stay on top, so the pin button is gone.</li>
+        </ul>
+        <h4>Define Word</h4>
+        <ul>
+          <li>Added Define Word, an in-panel dictionary: headword, pronunciation, parts of speech, numbered senses with examples, phrases, origin, and thesaurus synonyms, with "did you mean" suggestions for a misspelling.</li>
+          <li>Return copies the definition. ⌘K adds Copy Word, Open in Dictionary, and Search the Web.</li>
+        </ul>
+        <h4>Color History</h4>
+        <ul>
+          <li>Added Color History: the last 50 colors you copied or picked, with a large swatch, a tint and shade ramp, and HEX, RGB, HSL, HSB, SwiftUI, and NSColor values, each copyable with a click.</li>
+          <li>Shows contrast against white and black, the app the color came from, and when it was copied.</li>
+          <li>Return copies HEX, ⌘↩ pastes it, ⇧⌘C copies RGB, ⌃X deletes a color, and ⇧⌘⌫ clears the list after asking.</li>
+        </ul>
+        <h4>Launcher</h4>
+        <ul>
+          <li>Added Settings → Launcher, where fallback commands can be switched off and reordered by drag. Search Bar Icon and Pop to Root live there now.</li>
+          <li>The bottom section now reads <code>Use "&lt;query&gt;" with…</code> and offers Run in Terminal, Search the Web, Run Agent, and Define Word for whatever you typed.</li>
+          <li>Typing the alias of an in-panel command, such as Clipboard History or Search Emoji, and pressing Space opens it right away, so you keep typing in its search field.</li>
+        </ul>
+        <h4>Clipboard</h4>
+        <ul>
+          <li>Added an Enable Clipboard History switch at the top of Settings → Clipboard History. Off means SuperCmd stops reading the clipboard entirely. Saved history is kept.</li>
+          <li>The Edit overlay is a glass card with Cancel (Esc), Save (⌘S), and Save &amp; Paste (⌘↩), and puts the caret in the text immediately.</li>
+          <li>The Source row shows the real icon of the app a clip came from.</li>
+        </ul>
+        <h4>Hyper Key</h4>
+        <ul>
+          <li>Added Include Shift, on by default. Off, the Hyper Key sends ⌃⌥⌘ and leaves Hyper + Shift free as its own layer. Existing shortcuts keep the exact chord they were recorded with.</li>
+        </ul>
+        <h4>Auto Quit</h4>
+        <ul>
+          <li>Added application exclusions: keep All Applications selected and exclude the apps that should never be quit, such as Stickies. Exclusions win in both scopes and sync to your other Macs.</li>
+          <li>The Auto Quit card holds a single app list that follows Apply To: the apps to keep open under All Applications, or the apps to quit under Only Selected.</li>
+          <li>The list uses a searchable app picker, which includes running apps outside your usual app folders.</li>
+        </ul>
+        <h4>Screenshots</h4>
+        <ul>
+          <li>⌘S saves the annotated capture straight to your screenshot folder, or the Desktop when none is set, and closes the editor. The old ⇧⌘S save collided with the Read Aloud hotkey and never fired.</li>
+        </ul>
+        <h4>Dictation</h4>
+        <ul>
+          <li>OpenRouter transcription adds MAI-Transcribe 2 and Deepgram Nova-3.</li>
+        </ul>
+        <h3>Improvements</h3>
+        <h4>AI</h4>
+        <ul>
+          <li>Reply text in AI Chat and Quick AI can be selected across paragraphs, lists, and tables.</li>
+          <li>Copying a reply gives plain text, without Markdown symbols. Copied tables keep their columns and copied code keeps its tabs.</li>
+          <li>Images in a reply render as images. <code>&lt;br&gt;</code> in a table cell is a line break.</li>
+          <li>Typing or pasting while reply text is selected goes to the message box.</li>
+        </ul>
+        <h4>Launcher</h4>
+        <ul>
+          <li>Running a command starts the next open at an empty search. Dismissing with Esc, a click outside, or the hotkey still brings back your query.</li>
+          <li>Every list scrolls back to the top when you type: clipboard, snippets, quicklinks, notes, schedule, files, screenshots, contacts, menu items, the extension store, and the emoji picker.</li>
+          <li>App names follow your Mac's language even when SuperCmd's interface does not have it, so a Polish Mac finds "Kalendarz". The English name still matches.</li>
+        </ul>
+        <h4>Notes</h4>
+        <ul>
+          <li>Pasting a clipboard entry, emoji, or snippet from the launcher lands in the app you came from, or in the note you opened the launcher from.</li>
+          <li>Text scrolls under the formatting bar, and typing past the bottom keeps the caret in view.</li>
+        </ul>
+        <h4>Search Contacts</h4>
+        <ul>
+          <li>⌘C copies the phone number, like ⌘C in the other lists.</li>
+        </ul>
+        <h4>Emoji</h4>
+        <ul>
+          <li>↑ and ↓ keep your column when moving between sections, and no longer bounce back into Recently Used.</li>
+        </ul>
+        <h4>Hyper Key</h4>
+        <ul>
+          <li>The Caps Lock remap now works on keyboards that expose more than one keyboard device</li>
+        </ul>
+        <h3>Bug Fixes</h3>
+        <ul>
+          <li>Fixed the most common crash on 1.0.8, which could take down the app hours after an unrelated error in a text view.</li>
+          <li>The launcher and note windows can be dragged again on macOS 27.</li>
+          <li>Settings sidebar ↑ and ↓ no longer skip Calendar.</li>
+        </ul>
+]]></description>
+      <enclosure url="https://github.com/SuperCmdLabs/SuperCmd-v2-releases/releases/download/1.0.9/SuperCmd.dmg" type="application/octet-stream" sparkle:edSignature="ZahHcu35/bTEln4spmOS5q1IwxXnE3sRYsEgp2Zt1DB+/WhN5GrwQlFOjCx5YFVJxdO3NbeRfUXycvPnlAieDQ==" length="14650156" />
+    </item>
+    <item>
       <title>SuperCmd 1.0.8</title>
       <pubDate>Sat, 19 Sep 2026 13:33:51 GMT</pubDate>
       <sparkle:version>9</sparkle:version>
