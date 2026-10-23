@@ -3,6 +3,132 @@
   <channel>
     <title>SuperCmd</title>
     <item>
+      <title>SuperCmd 2.0.0</title>
+      <pubDate>Fri, 23 Oct 2026 02:53:36 GMT</pubDate>
+      <sparkle:version>11</sparkle:version>
+      <sparkle:shortVersionString>2.0.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h3>New Features</h3>
+        <h4>Liquid Glass</h4>
+        <ul>
+          <li><strong>Window Style in Settings → General → Appearance picks Frosted or Liquid Glass</strong>, the native macOS 26 material Spotlight uses. Frosted stays the default.</li>
+          <li><strong>A Transparency slider</strong> fades Liquid Glass from the regular material to clear glass with the wallpaper showing through.</li>
+          <li><strong>On macOS 27 the slider works on top of the system-wide transparency</strong>, adding to that base rather than replacing it.</li>
+          <li><strong>Background Tint applies to both styles</strong>, and each remembers its own value.</li>
+          <li>The bottom islands, the ⌘K menu, the widget tiles and the note window's formatting bar draw on the same glass, so they follow the chosen style and tint.</li>
+        </ul>
+        <h4>Pick Your Launcher Font</h4>
+        <ul>
+          <li><strong>Settings → General → Appearance → Font renders the launcher in any installed font family</strong>, or System Default. The choice is per Mac. Families with only Regular and Bold, such as Menlo, no longer render the whole panel bold.</li>
+        </ul>
+        <h4>Improved Winodw Switcher</h4>
+        <ul>
+          <li><strong>Tiles are ordered by most recent use</strong>, so one tap goes back to the window you just left, even a full-screen window on another Space.</li>
+          <li><strong>⌘Tab and ⌘⇧Tab can be recorded as the switcher's hotkey</strong>. The system app switcher gets its chord back on quit, and after a crash.</li>
+          <li><strong>Previews are kept between opens</strong>, so the grid shows real thumbnails the moment it appears. The cache is capped at 16 MiB.</li>
+          <li>Each tile shows its app's icon, and the selected tile has a near-white border instead of a blue one that vanished over blue windows.</li>
+          <li><strong>The grid is sized for the screen it opens on</strong>, rows are centred, and closing windows from the switcher (X, ⌫, ⌘W) shrinks the panel to fit.</li>
+          <li>Browser hover cards and other helper windows no longer show up as tiles with Show windows from all Desktops on.</li>
+          <li>The switcher follows Window Style, Background Tint and Transparency, with more room around the grid and rounded corners. Closing a window no longer lags.</li>
+        </ul>
+        <h4>Improved Screenshot tool</h4>
+        <ul>
+          <li><strong>The history now shows every image in your Screenshot Folder</strong>, newest first, up to 300, including ⇧⌘3 and ⇧⌘4 captures. Imported images are searchable by their text and open in the annotation editor.</li>
+          <li><strong>SuperCmd never writes, moves or deletes an image it did not create.</strong> Deleting an imported row leaves the file in place; a file that leaves the folder takes its row with it.</li>
+          <li>↩ or a double-click <strong>previews a screenshot in Quick Look</strong>; ⌘Y does the same from ⌘K.</li>
+          <li>Reveal in Finder shows the real file. Done or ⌘S overwrites an imported file in place; Discard leaves it untouched.</li>
+        </ul>
+        <h4>Check for Updates: Extensions Store</h4>
+        <ul>
+          <li><strong>Update Extension re-downloads an installed extension</strong> from the Store's ⌘K menu, the launcher's ⌘K menu or a ↻ button in Settings → Extensions. Preferences, aliases, pins, hotkeys, menu-bar items and sign-ins survive.</li>
+          <li>Typing an extension or script command's alias and pressing Space enters its argument fill, like a quicklink.</li>
+          <li>↩ on an extension command with arguments puts the caret in the first empty pill; a second ↩ runs it once every required pill is filled.</li>
+        </ul>
+        <h4>Aliases for Script Commands</h4>
+        <ul>
+          <li><strong>Script Commands can carry a launcher alias</strong>, with the same alias pill in Settings → Scripts as apps, commands, quicklinks and extensions.</li>
+        </ul>
+        <h4>Dictation: Chimes, Output Choice and More Hold Keys</h4>
+        <ul>
+          <li><strong>Output in Settings → Dictation → Behavior chooses where the transcript goes</strong>: Paste to active app, Copy to clipboard, or Paste and copy.</li>
+          <li><strong>A chime plays when the microphone goes live and when the session ends.</strong> Pick None, Bubble, Octave or Marimba under Behavior → Sound.</li>
+          <li><strong>The hold-to-talk key can be F1 to F17 or a left-side ⌘, ⌥, ⌃ or ⇧</strong>, in addition to Fn and the right-side modifiers. A held function key never reaches the app you are dictating into.</li>
+        </ul>
+        <h4>Search Files: Spotlight Index, Open With and Share</h4>
+        <ul>
+          <li><strong>Use Spotlight Index in Settings → File Search builds the index from Spotlight</strong> instead of a folder scan. Index Stats shows which source is in use. Per Mac.</li>
+          <li><strong>Rows show the bare file name</strong>; the folder path appears only when two results share a name.</li>
+          <li><strong>Open With… in ⌘K is a nested list of apps</strong>: the default handler, every app registered for the file, and Other….</li>
+          <li><strong>Share… in ⌘K lists the system share services</strong>, such as AirDrop, Messages and Notes, for file rows in Search Files, the launcher and Clipboard History.</li>
+        </ul>
+        <h4>Clipboard History Previews Files and Reads Pictures</h4>
+        <ul>
+          <li><strong>A copied file is previewed in the detail pane</strong>: a thumbnail for images, PDFs and movies, the text for text files, the icon otherwise. ⌘Y opens it in Quick Look.</li>
+          <li><strong>Copy Text (⌘⌥C) and text recognition now cover pictures copied from Finder</strong>, not only screenshots, so their text is searchable. A picture iCloud has not downloaded is refused with a message instead of stalling the app.</li>
+          <li><strong>Pasting or copying an entry moves it to the top</strong> without adding a duplicate. Pinned entries stay put.</li>
+        </ul>
+        <h4>Quicklinks You Can Drag Out as Files</h4>
+        <ul>
+          <li>A quicklink whose link is a file path <strong>can be dragged out of the panel as a file</strong>, from its launcher row or Search Quicklinks.</li>
+          <li>Typing a quicklink's alias and pressing Space puts the caret in its first argument pill. Space never opens the link.</li>
+          <li>New Quicklink and the pencil button in Settings → Quicklinks open the in-panel editor.</li>
+        </ul>
+        <h4>Show or Hide Notes With HotKey</h4>
+        <ul>
+          <li><strong>Show/Hide Notes is a new command</strong> that hides every floating note window or brings them back, with a hotkey row in Settings → Notes. With no note open it opens the most recently edited one.</li>
+          <li><strong>The note window has a resize grip</strong>, text dissolves under the title bar as it scrolls, and the scroller sits flush with the edge.</li>
+          <li><strong>Lists behave in the editor</strong>: numbered markers take the accent colour, Tab nests an item as a fresh list from 1, Return on an empty nested item steps back out, and a typed starting number such as 5. is kept.</li>
+        </ul>
+        <h4>A Settings Pane for Snippets</h4>
+        <ul>
+          <li><strong>Settings → Snippets is new</strong>, with an Enable Snippets switch, an expansion sound (None or any macOS alert sound) and hotkey rows for Search Snippets and Create Snippet.</li>
+        </ul>
+        <h4>Escape Key Behaviour, Nested ⌘K Menus and More</h4>
+        <ul>
+          <li><strong>Escape Key Behavior in Settings → Launcher decides what Escape does.</strong> The new default steps back one level per press, like ⌫ in an empty field, and closes only from the root. The old one-press close is still available.</li>
+          <li><strong>Escape Key Closes Window decides whether Escape closes</strong> Settings, AI Chat and note windows.</li>
+          <li><strong>The search bar floats over every mode</strong>, and content dissolves under it as it scrolls.</li>
+          <li><strong>The ⌘K menu opens nested levels in place</strong>: ↩ or → enters, ← or ⌫ on an empty filter returns, Escape steps out one level.</li>
+          <li><strong>Define Word suggests the nearest words for a misspelling</strong>: "recieve" offers "receive", ↑ ↓ to choose, ↩ to look up.</li>
+          <li><strong>The calculator names currencies</strong>: "1 usd to inr" shows US Dollar and Indian Rupee under the result.</li>
+          <li>The compact launcher grows in the same frame as the first keystroke, with no flash of the full chrome.</li>
+          <li>The Memory widget matches Activity Monitor's Memory Used.</li>
+        </ul>
+        <h4>Uninstall Anything, Even Root-Owned Apps</h4>
+        <ul>
+          <li><strong>The Uninstaller opens instantly and finds related files in the background.</strong> Items you cannot move yourself, such as a root-owned App Store app, go to the Trash <strong>after a Touch ID or password prompt</strong> instead of failing. Such rows carry a lock badge.</li>
+        </ul>
+        <h3>Improvements</h3>
+        <h4>Launcher Polish</h4>
+        <ul>
+          <li>Widget tiles are lighter cards with a soft hairline, the stray divider under the strip is gone, and the results fade ends at the panel's true bottom edge.</li>
+          <li><strong>Reset Launcher Position centers the panel between the menu bar and the Dock</strong> instead of 80 pt above center.</li>
+          <li><strong>Dead-key and IME compositions () survive in the search field.</strong> A slow accent, or a Pinyin or Japanese candidate, is no longer dropped while the launcher re-renders.</li>
+          <li>When a ⌘K menu closes, the caret returns to the search field in every mode.</li>
+          <li>Lists never show the thick legacy scroll bar when Show scroll bars is set to Always.</li>
+          <li>The notes preview scrolls to the bottom edge and fades under the action bar instead of a hard clip.</li>
+        </ul>
+        <h4>Translate</h4>
+        <ul>
+          <li>The arrow between the panes is a plain hint rather than a button, and the input editor hides its scroll bar.</li>
+        </ul>
+        <h3>Bug Fixes</h3>
+        <ul>
+          <li><strong>Fixed the 1.0.9 crash on Macs that never loaded a local AI model.</strong> The GPU cache was cleared before any model existed.</li>
+          <li><strong>App discovery no longer re-runs every 2 to 64 seconds</strong> because of a system bundle without an Info.plist. Idle memory on an affected Mac dropped from about 295 MB to about 91 MB.</li>
+          <li><strong>The window switcher appears on every desktop.</strong> It could open on one Space and draw nothing on the others.</li>
+          <li>The footer's primary pill (Open ↩, Paste ↩) <strong>responds to clicks in every mode</strong>, not only in the launcher.</li>
+          <li><strong>The eyedropper reads the exact color on screen.</strong> It went through the wrong color profile before, so greys came back lighter and reds shifted toward orange, and on Retina displays each loupe cell blended four pixels.</li>
+          <li><strong>The color picker works on every display.</strong></li>
+          <li><strong>Grok chat no longer breaks when the service raises its minimum client version.</strong> SuperCmd adopts the new floor and retries on the next message, with no update needed.</li>
+          <li>Sidebar icons fit their tiles whatever the symbol's shape.</li>
+          <li><strong>QR Code Scanner extension fix</strong>: legacy text encodings decode, and the command returns to the launcher when done.</li>
+        </ul>
+]]></description>
+      <enclosure url="https://github.com/SuperCmdLabs/SuperCmd-v2-releases/releases/download/2.0.0/SuperCmd.dmg" type="application/octet-stream" sparkle:edSignature="GPNFr88NEuF9EemZxyBjIQGgGHbuRxt5o6uxR5wwqLvFiwAiy94Al+ZIZUmV/TWXM5/1nvLWPSfzoUKx9r1IAw==" length="16020100" />
+    </item>
+    <item>
       <title>SuperCmd 1.0.9</title>
       <pubDate>Mon, 28 Sep 2026 19:38:19 GMT</pubDate>
       <sparkle:version>10</sparkle:version>
