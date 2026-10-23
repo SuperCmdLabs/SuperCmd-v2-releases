@@ -22,7 +22,7 @@
         <ul>
           <li><strong>Settings → General → Appearance → Font renders the launcher in any installed font family</strong>, or System Default. The choice is per Mac. Families with only Regular and Bold, such as Menlo, no longer render the whole panel bold.</li>
         </ul>
-        <h4>A Window Switcher That Remembers Where You Were</h4>
+        <h4>Improved Winodw Switcher</h4>
         <ul>
           <li><strong>Tiles are ordered by most recent use</strong>, so one tap goes back to the window you just left, even a full-screen window on another Space.</li>
           <li><strong>⌘Tab and ⌘⇧Tab can be recorded as the switcher's hotkey</strong>. The system app switcher gets its chord back on quit, and after a crash.</li>
@@ -32,19 +32,18 @@
           <li>Browser hover cards and other helper windows no longer show up as tiles with Show windows from all Desktops on.</li>
           <li>The switcher follows Window Style, Background Tint and Transparency, with more room around the grid and rounded corners. Closing a window no longer lags.</li>
         </ul>
-        <h4>Your Screenshot Folder, Right in the Panel</h4>
+        <h4>Improved Screenshot tool</h4>
         <ul>
           <li><strong>The history now shows every image in your Screenshot Folder</strong>, newest first, up to 300, including ⇧⌘3 and ⇧⌘4 captures. Imported images are searchable by their text and open in the annotation editor.</li>
           <li><strong>SuperCmd never writes, moves or deletes an image it did not create.</strong> Deleting an imported row leaves the file in place; a file that leaves the folder takes its row with it.</li>
           <li>↩ or a double-click <strong>previews a screenshot in Quick Look</strong>; ⌘Y does the same from ⌘K.</li>
           <li>Reveal in Finder shows the real file. Done or ⌘S overwrites an imported file in place; Discard leaves it untouched.</li>
         </ul>
-        <h4>Update Extensions in Place</h4>
+        <h4>Check for Updates: Extensions Store</h4>
         <ul>
           <li><strong>Update Extension re-downloads an installed extension</strong> from the Store's ⌘K menu, the launcher's ⌘K menu or a ↻ button in Settings → Extensions. Preferences, aliases, pins, hotkeys, menu-bar items and sign-ins survive.</li>
           <li>Typing an extension or script command's alias and pressing Space enters its argument fill, like a quicklink.</li>
           <li>↩ on an extension command with arguments puts the caret in the first empty pill; a second ↩ runs it once every required pill is filled.</li>
-          <li><strong>QR Code Scanner works again</strong>: legacy text encodings decode, and the command returns to the launcher when done.</li>
         </ul>
         <h4>Aliases for Script Commands</h4>
         <ul>
@@ -75,7 +74,7 @@
           <li>Typing a quicklink's alias and pressing Space puts the caret in its first argument pill. Space never opens the link.</li>
           <li>New Quicklink and the pencil button in Settings → Quicklinks open the in-panel editor.</li>
         </ul>
-        <h4>Show or Hide Every Note With One Key</h4>
+        <h4>Show or Hide Notes With HotKey</h4>
         <ul>
           <li><strong>Show/Hide Notes is a new command</strong> that hides every floating note window or brings them back, with a hotkey row in Settings → Notes. With no note open it opens the most recently edited one.</li>
           <li><strong>The note window has a resize grip</strong>, text dissolves under the title bar as it scrolls, and the scroller sits flush with the edge.</li>
@@ -85,7 +84,7 @@
         <ul>
           <li><strong>Settings → Snippets is new</strong>, with an Enable Snippets switch, an expansion sound (None or any macOS alert sound) and hotkey rows for Search Snippets and Create Snippet.</li>
         </ul>
-        <h4>Escape Your Way, Nested ⌘K Menus and More</h4>
+        <h4>Escape Key Behaviour, Nested ⌘K Menus and More</h4>
         <ul>
           <li><strong>Escape Key Behavior in Settings → Launcher decides what Escape does.</strong> The new default steps back one level per press, like ⌫ in an empty field, and closes only from the root. The old one-press close is still available.</li>
           <li><strong>Escape Key Closes Window decides whether Escape closes</strong> Settings, AI Chat and note windows.</li>
@@ -100,33 +99,19 @@
         <ul>
           <li><strong>The Uninstaller opens instantly and finds related files in the background.</strong> Items you cannot move yourself, such as a root-owned App Store app, go to the Trash <strong>after a Touch ID or password prompt</strong> instead of failing. Such rows carry a lock badge.</li>
         </ul>
-        <h4>A Pixel-Exact Color Picker</h4>
-        <ul>
-          <li><strong>The eyedropper reads the exact color on screen.</strong> It went through the wrong color profile before, so greys came back lighter and reds shifted toward orange, and on Retina displays each loupe cell blended four pixels.</li>
-          <li><strong>The loupe works on every display.</strong></li>
-        </ul>
         <h3>Improvements</h3>
         <h4>Launcher Polish</h4>
         <ul>
           <li>Widget tiles are lighter cards with a soft hairline, the stray divider under the strip is gone, and the results fade ends at the panel's true bottom edge.</li>
           <li><strong>Reset Launcher Position centers the panel between the menu bar and the Dock</strong> instead of 80 pt above center.</li>
-          <li><strong>Dead-key and IME compositions survive in the search field.</strong> A slow accent, or a Pinyin or Japanese candidate, is no longer dropped while the launcher re-renders.</li>
+          <li><strong>Dead-key and IME compositions () survive in the search field.</strong> A slow accent, or a Pinyin or Japanese candidate, is no longer dropped while the launcher re-renders.</li>
           <li>When a ⌘K menu closes, the caret returns to the search field in every mode.</li>
           <li>Lists never show the thick legacy scroll bar when Show scroll bars is set to Always.</li>
           <li>The notes preview scrolls to the bottom edge and fades under the action bar instead of a hard clip.</li>
-          <li><strong>The launcher is dragged by its header only</strong>, so selecting text or clicking between rows never moves it. Dropping near the screen's center snaps it onto the guide.</li>
         </ul>
         <h4>Translate</h4>
         <ul>
           <li>The arrow between the panes is a plain hint rather than a button, and the input editor hides its scroll bar.</li>
-        </ul>
-        <h4>Settings</h4>
-        <ul>
-          <li>Sidebar icons fit their tiles whatever the symbol's shape.</li>
-        </ul>
-        <h4>Grok Stays Connected</h4>
-        <ul>
-          <li><strong>Grok chat no longer breaks when the service raises its minimum client version.</strong> SuperCmd adopts the new floor and retries on the next message, with no update needed.</li>
         </ul>
         <h3>Bug Fixes</h3>
         <ul>
@@ -134,6 +119,11 @@
           <li><strong>App discovery no longer re-runs every 2 to 64 seconds</strong> because of a system bundle without an Info.plist. Idle memory on an affected Mac dropped from about 295 MB to about 91 MB.</li>
           <li><strong>The window switcher appears on every desktop.</strong> It could open on one Space and draw nothing on the others.</li>
           <li>The footer's primary pill (Open ↩, Paste ↩) <strong>responds to clicks in every mode</strong>, not only in the launcher.</li>
+          <li><strong>The eyedropper reads the exact color on screen.</strong> It went through the wrong color profile before, so greys came back lighter and reds shifted toward orange, and on Retina displays each loupe cell blended four pixels.</li>
+          <li><strong>The color picker works on every display.</strong></li>
+          <li><strong>Grok chat no longer breaks when the service raises its minimum client version.</strong> SuperCmd adopts the new floor and retries on the next message, with no update needed.</li>
+          <li>Sidebar icons fit their tiles whatever the symbol's shape.</li>
+          <li><strong>QR Code Scanner extension fix</strong>: legacy text encodings decode, and the command returns to the launcher when done.</li>
         </ul>
 ]]></description>
       <enclosure url="https://github.com/SuperCmdLabs/SuperCmd-v2-releases/releases/download/2.0.0/SuperCmd.dmg" type="application/octet-stream" sparkle:edSignature="GPNFr88NEuF9EemZxyBjIQGgGHbuRxt5o6uxR5wwqLvFiwAiy94Al+ZIZUmV/TWXM5/1nvLWPSfzoUKx9r1IAw==" length="16020100" />
