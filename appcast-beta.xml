@@ -1,5 +1,29 @@
 <?xml version='1.0' encoding='utf-8'?>
 <rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0"><channel><title>SuperCmd Beta</title><item>
+<title>SuperCmd Beta 2.0.1-beta</title>
+<pubDate>Sat, 21 Nov 2026 12:49:18 +0000</pubDate>
+<sparkle:version>5</sparkle:version>
+<sparkle:shortVersionString>2.0.1-beta</sparkle:shortVersionString>
+<sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+<description>&lt;h1&gt;SuperCmd Beta 2.0.1-beta&lt;/h1&gt;
+&lt;p&gt;The beta of SuperCmd 2.0.1. It installs as SuperCmd Beta next to the stable app, with its own settings, clipboard and notes database, note pictures, extensions, file index and update feed, so your stable install stays untouched. Everything merged since 2.0.0 is in this build. Run one channel at a time for global hotkeys, the Hyper Key and browser sign-in. Apple silicon only, like the stable app.&lt;/p&gt;
+&lt;h2&gt;New Features&lt;/h2&gt;
+&lt;h3&gt;Notes&lt;/h3&gt;
+&lt;ul&gt;&lt;li&gt;Paste a picture into a note with ⌘V: a screenshot, a copied image or a copied image file. It appears inline on its own line, scaled to the note's width, with rounded corners, and rescales when you resize the window.&lt;/li&gt;&lt;li&gt;Pictures are stored as files next to the notes database, not inside the note text, so search and sync stay fast. With a Notes Folder set, they are mirrored into its &lt;code&gt;attachments&lt;/code&gt; folder and the Markdown files render in other editors.&lt;/li&gt;&lt;li&gt;Deleting a note moves its pictures to the Trash unless another note still uses them.&lt;/li&gt;&lt;li&gt;Browse Notes: press ⌘P in a note window, or click the new button left of &lt;code&gt;+&lt;/code&gt;, to search every note without leaving the window. ↑ and ↓ move, ↩ opens the note in the same window, ESC closes.&lt;/li&gt;&lt;li&gt;The traffic lights and the top-right buttons of a note window hide while the note is not in focus.&lt;/li&gt;&lt;/ul&gt;
+&lt;h3&gt;Hyper Key Map&lt;/h3&gt;
+&lt;ul&gt;&lt;li&gt;A new Hyper Key Map command opens a keyboard-shaped window that draws every Hyper shortcut on its physical key, with the app or command icon on the keycap.&lt;/li&gt;&lt;li&gt;Each key glows in its icon's colour. A &lt;code&gt;+N&lt;/code&gt; badge marks keys with more than one shortcut and &lt;code&gt;⇧&lt;/code&gt; marks Hyper+Shift chords.&lt;/li&gt;&lt;li&gt;Hover or press a key to see what it runs. ⌘W closes the window.&lt;/li&gt;&lt;/ul&gt;
+&lt;h3&gt;Calculator&lt;/h3&gt;
+&lt;ul&gt;&lt;li&gt;Weather questions answer with a weather card: &lt;code&gt;weather in Tokyo&lt;/code&gt;, &lt;code&gt;temp in LAX&lt;/code&gt;, &lt;code&gt;humidity in Pune&lt;/code&gt;, &lt;code&gt;high in Paris in fahrenheit&lt;/code&gt;.&lt;/li&gt;&lt;li&gt;Large answers are written in full with your system's digit grouping instead of being shortened to &lt;code&gt;1.000002M&lt;/code&gt;, with the number spelled out underneath.&lt;/li&gt;&lt;/ul&gt;
+&lt;h3&gt;Clipboard History&lt;/h3&gt;
+&lt;ul&gt;&lt;li&gt;Selecting a copied link shows a preview of the page: its image, or its site, title and description. The page is fetched only when you select the entry, never when you copy. Settings → Clipboard History → Show Link Previews turns it off.&lt;/li&gt;&lt;li&gt;The Information table shows URL and Title for links.&lt;/li&gt;&lt;/ul&gt;
+&lt;h3&gt;Settings&lt;/h3&gt;
+&lt;ul&gt;&lt;li&gt;Every pane has its own colour icon in the sidebar.&lt;/li&gt;&lt;li&gt;The Settings window is resizable in height and opens taller.&lt;/li&gt;&lt;/ul&gt;
+&lt;h2&gt;Improvements&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;Scroll bars are thin overlay scrollers everywhere, also with macOS set to always show scroll bars.&lt;/li&gt;&lt;li&gt;The launcher releases its rows while hidden, so a launcher left alone for hours holds less memory, and hovering rows while scrolling costs less.&lt;/li&gt;&lt;li&gt;My Schedule asks macOS to sync calendars when it opens, at launch, on wake and every 15 minutes.&lt;/li&gt;&lt;/ul&gt;
+&lt;h2&gt;Bug Fixes&lt;/h2&gt;
+&lt;ul&gt;&lt;li&gt;My Schedule and meeting reminders kept the old time of a meeting its organizer had moved on a Microsoft 365 account.&lt;/li&gt;&lt;li&gt;Read Aloud with the Edge voices failed on every request with a bad server response.&lt;/li&gt;&lt;li&gt;Clipboard History drew a pasted clip as selected next to the row that was actually selected.&lt;/li&gt;&lt;/ul&gt;</description>
+<enclosure url="https://github.com/SuperCmdLabs/supercmd-v2-releases/releases/download/beta-v2.0.1-beta-5/SuperCmd-Beta-2.0.1-beta-5.dmg" type="application/octet-stream" sparkle:edSignature="rL0/Hz6HBym1nrygO+w80dSHxlkLdhRRfs0+bh/EAIcjD6zkNIAWG/Fa+OUL6eP52HvczPb1tVyy/0o8Y0zsAg==" length="16058291" />
+</item><item>
 <title>SuperCmd Beta 2.0.0-beta</title>
 <pubDate>Tue, 20 Oct 2026 21:04:34 +0000</pubDate>
 <sparkle:version>4</sparkle:version>
