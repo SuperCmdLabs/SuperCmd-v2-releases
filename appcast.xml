@@ -3,6 +3,74 @@
   <channel>
     <title>SuperCmd</title>
     <item>
+      <title>SuperCmd 2.0.1</title>
+      <pubDate>Tue, 24 Nov 2026 21:19:36 GMT</pubDate>
+      <sparkle:version>12</sparkle:version>
+      <sparkle:shortVersionString>2.0.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[
+        <h3>New Features</h3>
+        <h4>Pictures in Notes</h4>
+        <ul>
+          <li><strong>Paste a picture into a note with ⌘V</strong>: a screenshot, a copied image or a copied image file. It sits on its own line, scaled to the note's width, and rescales with the window.</li>
+          <li><strong>Pictures travel with your notes.</strong> Cloud Sync carries them to your other Macs, and with a Notes Folder set they are mirrored into its <code>attachments</code> folder, so the Markdown files render in other editors.</li>
+          <li>Pictures are stored as files next to the notes database, not inside the note text, so search and sync stay fast.</li>
+          <li>Deleting a note moves its pictures to the Trash unless another note still uses them.</li>
+          <li><strong>Browse Notes with ⌘P in a note window</strong>, or the new button left of <code>+</code>: search every note and open one in the same window. ↑ and ↓ move, ↩ opens, ESC closes.</li>
+          <li><strong>A note window's traffic lights and top-right buttons show while the pointer is over it</strong> and hide when it leaves, so a note left on screen reads as a quiet card.</li>
+        </ul>
+        <h4>Hyper Key Map</h4>
+        <ul>
+          <li><strong>A new Hyper Key Map command draws every Hyper shortcut on its physical key</strong>, with the app or command icon on the keycap.</li>
+          <li>Each key glows in its icon's colour. A <code>+N</code> badge marks keys with more than one shortcut and <code>⇧</code> marks Hyper+Shift chords.</li>
+          <li>Hover or press a key to see what it runs. ⌘W closes the window.</li>
+        </ul>
+        <h4>Calculator: Weather and Full Numbers</h4>
+        <ul>
+          <li><strong>Ask for the weather right in the launcher</strong>: <code>weather in Tokyo</code>, <code>temp in LAX</code>, <code>humidity in Pune</code>, <code>high in Paris in fahrenheit</code>.</li>
+          <li>Ambiguous city names resolve to the best-known place and are labelled with their state or country.</li>
+          <li><strong>Large answers are written in full</strong> with your system's digit grouping instead of being shortened to <code>1.000002M</code>, with the number spelled out underneath.</li>
+          <li>Copying an answer shows a "Copied to clipboard" toast.</li>
+        </ul>
+        <h4>Calculator History</h4>
+        <ul>
+          <li><strong>A new Calculator History command lists your past calculations</strong>, grouped by day, with the expression on the left and the answer on the right.</li>
+          <li>A calculation is saved when you copy its answer, clear it with ESC or close the launcher on it. Repeating one moves it to the top.</li>
+          <li><strong>Its search field calculates too</strong>: type an expression and the answer leads the list.</li>
+          <li>↩ copies the answer and ⌘↩ pastes it. ⌘K adds Copy Expression, Delete Entry and Clear All.</li>
+        </ul>
+        <h4>Link Previews in Clipboard History</h4>
+        <ul>
+          <li><strong>Selecting a copied link shows a preview of the page</strong>: its image, or its site, title and description. The page is fetched only when you select the entry, never when you copy.</li>
+          <li>Settings → Clipboard History → Show Link Previews turns it off.</li>
+          <li>The Information table shows the URL and title for links.</li>
+        </ul>
+        <h4>A Fresher Settings Window</h4>
+        <ul>
+          <li><strong>Every pane has its own colour icon</strong> in the sidebar.</li>
+          <li><strong>The Settings window is resizable in height</strong> and opens taller.</li>
+        </ul>
+        <h3>Improvements</h3>
+        <ul>
+          <li><strong>Sharper app icons in the launcher</strong>: each row uses the icon macOS draws for that exact size, as Spotlight does.</li>
+          <li>Scroll bars are thin overlay scrollers everywhere, also with macOS set to always show scroll bars.</li>
+          <li>The launcher releases its rows while hidden, so a launcher left alone for hours holds less memory, and hovering rows while scrolling costs less.</li>
+          <li>My Schedule asks macOS to sync calendars when it opens, at launch, on wake and every 15 minutes.</li>
+        </ul>
+        <h3>Bug Fixes</h3>
+        <ul>
+          <li><strong>Snippets crashed the app on every expansion once an expansion sound was selected</strong>, and so did previewing the sound in Settings.</li>
+          <li><strong>The app crashed while showing download progress during onboarding</strong> in Japanese, Korean and Chinese.</li>
+          <li><strong>The launcher could crash on macOS 26</strong> when SwiftUI and SuperCmd disagreed about the panel's width.</li>
+          <li><strong>Closing and quickly reopening the camera could crash the app.</strong> Unplugging a camera no longer needs a relaunch, and capturing after an unplug no longer crashes.</li>
+          <li>My Schedule and meeting reminders kept the old time of a meeting its organizer had moved on a Microsoft 365 account.</li>
+          <li>Read Aloud with the Edge voices failed on every request with a bad server response.</li>
+          <li>Clipboard History drew a pasted clip as selected next to the row that was actually selected.</li>
+        </ul>
+]]></description>
+      <enclosure url="https://github.com/SuperCmdLabs/SuperCmd-v2-releases/releases/download/2.0.1/SuperCmd.dmg" type="application/octet-stream" sparkle:edSignature="byNmJpN1otVBdu1a5OIKAU2nayo0i+i+8AIziMnIFVdxULVNSqsL3dMCPDHjdVU5HxBsZNoWoyx2SXHLFuIuCA==" length="16404162" />
+    </item>
+    <item>
       <title>SuperCmd 2.0.0</title>
       <pubDate>Fri, 23 Oct 2026 02:53:36 GMT</pubDate>
       <sparkle:version>11</sparkle:version>
